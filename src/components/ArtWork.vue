@@ -287,13 +287,14 @@ export default {
   mounted() {   
       // Testing if SVG animation is working 
          let tl = new TimelineMax();
-			tl.fromTo("#white-lined-circle-bottom", 3, {
+			tl.fromTo("#white-lined-circle-bottom", 5, {
 				opacity: 0
-			}, {
+			}, {scaleX: 4,
+				scaleY: 2,
+				repeat: 12,
                 opacity: 1,                
 				ease: Sine.easeOut
 			}, );
-
 	}
 
    
