@@ -24,16 +24,18 @@
       
     </div>
     <h1> & I'm Looking For a Front-End Developer Job</h1>
-   
-  </div>
+     <AppAnimatedIcon/>
+    </div>
 </template>
 
 <script>
-import { TimelineLite, TweenMax, Back } from "gsap";
-import "splitting/dist/splitting.css";
-import "splitting/dist/splitting-cells.css";
+import { TimelineLite, TweenMax, Back, Bezier } from "gsap";
+import AppAnimatedIcon from './icons/AppAnimatedIcon.vue'
 export default {
   name: "HelloWorld",
+  components: {
+      AppAnimatedIcon
+  },
   props: {
     msg: String
   },
@@ -54,8 +56,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .hello { 
-  font-family: "pink", sans-serif;
-  color: #33f;  
+  font-family: 'Vidaloka', serif;
+  color: #fefefe;  
+  text-shadow: 0.5px 0.5px rgb(20, 18, 20);
+  line-height: 1;
 }
 
 #name {
@@ -64,27 +68,28 @@ export default {
 
 }
 #name span {
-  font-size: 4vw;
+  font-size: 5vw;
   font-weight: 600;
   // color: #33f;
 }
 
 h1 {
- font-size: 5.3vw;
+ font-family: 'Vidaloka', serif;
+ font-size: 6vw;
  font-weight: 600;
  padding: 0.5% 2% 0.5% 2%;
 }
 .color-1 {
-  color: #33f;
+  color: #fefefe;
 }
 .color-2 {
-  color: #ff1493;
+  color: #ffde11;
 }
 .color-3 {
-  color: #33f;
+  color: #fefefe;
 }
 .color-4 {
-  color: #25862A;
+  color: #ff3b11;
 }
 
 </style>
