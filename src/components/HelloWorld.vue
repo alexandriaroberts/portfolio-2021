@@ -80,7 +80,7 @@ h1 {
  padding: 0.5% 2% 0.5% 2%;
 }
 .color-1 {
-  color: #fefefe;
+  color: #ff3cef;
 }
 .color-2 {
   color: #ffde11;

@@ -2,7 +2,7 @@
   <div class="home" id="grid-container">
     <HelloWorld class="helloworld"/>
     <FlowerArea class="flowerarea"/>
-    <!-- <ButterFly class="butterfly"/> -->
+    <ButterFly class="butterfly"/>
 
   </div>
 </template>

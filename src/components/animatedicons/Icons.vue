@@ -1,5 +1,6 @@
 <template>
 <footer>
+  <!-- Links to the Github, Codepen -->
 <ul class="link-list">
   <li class="link-list__item">
     <a href="https://codepen.io/iamlexieonearth/" class="link-list__link" aria-label="CodePen" aria-describedby="external">
