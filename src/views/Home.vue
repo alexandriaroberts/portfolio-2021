@@ -1,55 +1,43 @@
 <template>
-  <div class="home" id="grid-container">
-    <HelloWorld class="helloworld"/>
-    <FlowerArea class="flowerarea"/>
-    <ButterFly class="butterfly"/>
-
+  <div class="home">
+    <HelloWorld class="helloworld" />
+    <MorphingArea class="MorphingArea" />
+    <!-- <ButterFly class="butterfly"/> -->
   </div>
 </template>
 
 <script>
-
 import HelloWorld from "@/components/HelloWorld.vue";
-import FlowerArea from "@/components/FlowerArea.vue";
+import MorphingArea from "@/components/MorphingArea.vue";
 import ButterFly from "@/components/ButterFly.vue";
 
 export default {
   name: "home",
   components: {
     HelloWorld,
-    FlowerArea,
+    MorphingArea,
     ButterFly
   }
 };
 </script>
 <style scoped lang="scss">
 .home {
-  font-family: "pink", sans-serif;
-  color: #ff3cef;
-  background: #33f;
+  font-family: Lora;
+  color: #000;
+  background: var(--main-bg-color);
 }
 
-#grid-container {
+.home {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr ;
+  grid-column: 2 / 5;
+  grid-row: 2 / 4;
+  grid-template-columns: subgrid;
+  grid-template-rows: repeat(3, 1fr);
 }
 
-.helloworld {
-  grid-column: 1 / 3;
-  grid-row: 1 / 3;
-  justify-self: center;
+.MorphingArea {
+  position: relative;
+  grid-column: 2;
+  grid-row: 1 / 4;
 }
-
-.flowerarea {
-  grid-column: 1 / 3;
-  grid-row: 1; 
-  // background: rgb(166, 125, 156);
-  // padding: 10% 2% 0.5% 2%;  
-}
-
-.butterfly{
-  grid-column: 1 / 3;
-  grid-row: 1 / 3; 
- }
 </style>

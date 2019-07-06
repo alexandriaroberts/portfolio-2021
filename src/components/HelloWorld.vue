@@ -1,47 +1,107 @@
 <template>
-  <div class="hello"> 
+  <div class="hello">
+    <svg
+      class="heading-top-decoration"
+      width="98"
+      height="36"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="98" height="36" fill="#ACF8B8" />
+    </svg>
+
     <h1>Hello, I'm</h1>
-    <!-- HTML for Split Texting name-->  
-    <div id="name">
+    <!-- HTML for Split Texting name-->
+    <h1 id="name">
       <span class="color-1">A</span>
-      <span class="color-2">L</span>
-      <span class="color-3">E</span>
-      <span class="color-4">X</span>
-      <span class="color-1">A</span>
-      <span class="color-2">N</span>
-      <span class="color-2">D</span>
-      <span class="color-3">R</span>
-      <span class="color-4">I</span>
-      <span class="color-1">A</span>
+      <span class="color-2">l</span>
+      <span class="color-3">e</span>
+      <span class="color-4">x</span>
+      <span class="color-1">a</span>
+      <span class="color-2">n</span>
+      <span class="color-2">d</span>
+      <span class="color-3">r</span>
+      <span class="color-4">i</span>
+      <span class="color-1">a</span>
       <span class="color-2">&nbsp</span>
       <span class="color-1">R</span>
-      <span class="color-2">O</span>
-      <span class="color-3">B</span>
-      <span class="color-4">E</span>
-      <span class="color-1">R</span>
-      <span class="color-2">T</span>
-      <span class="color-2">S</span>
-      
-    </div>
-    <h1> & I'm Looking For a Front-End Developer Job</h1>
-     <AppAnimatedIcon/>
-    </div>
+      <span class="color-2">o</span>
+      <span class="color-3">b</span>
+      <span class="color-4">e</span>
+      <span class="color-1">r</span>
+      <span class="color-2">t</span>
+      <span class="color-2">s</span>
+    </h1>
+
+    <h3 class="job_name">Front-End Developer</h3>
+    <ul>
+      <h3>
+        <li>
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15 7.5C15 11.6421 11.6421 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5Z"
+              fill="#ACF8B8"
+            />
+          </svg>
+          VueJS
+        </li>
+        <li>
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15 7.5C15 11.6421 11.6421 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5Z"
+              fill="#ACF8B8"
+            />
+          </svg>
+          JavaScript
+        </li>
+        <li>
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15 7.5C15 11.6421 11.6421 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5Z"
+              fill="#ACF8B8"
+            />
+          </svg>
+          CSS Grid/Flexbox
+        </li>
+      </h3>
+    </ul>
+
+    <!-- <AppAnimatedIcon /> -->
+  </div>
 </template>
 
 <script>
 import { TimelineLite, TweenMax, Back, Bezier } from "gsap";
-import AppAnimatedIcon from './icons/AppAnimatedIcon.vue'
+import AppAnimatedIcon from "./icons/AppAnimatedIcon.vue";
 export default {
   name: "HelloWorld",
   components: {
-      AppAnimatedIcon
+    AppAnimatedIcon
   },
   props: {
     msg: String
   },
   mounted() {
     // Using GSAP TweenMAx plugin letters animation
-   let letters = "#name span";
+    let letters = "#name span";
 
     TweenMax.staggerFrom(
       letters,
@@ -55,41 +115,50 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.hello { 
-  font-family: 'Vidaloka', serif;
-  color: #fefefe;  
-  text-shadow: 0.5px 0.5px rgb(20, 18, 20);
-  line-height: 1;
+.hello {
+  font-family: Lora;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: rotate(0.12deg);
 }
 
-#name {
-   
-  padding: 0.5% 2% 0.5% 2%;
-
-}
 #name span {
-  font-size: 5vw;
-  font-weight: 600;
-  // color: #33f;
+  font-size: 50px;
+  font-weight: 400;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: rotate(0.12deg);
 }
 
 h1 {
- font-family: 'Vidaloka', serif;
- font-size: 6vw;
- font-weight: 600;
- padding: 0.5% 2% 0.5% 2%;
-}
-.color-1 {
-  color: #ff3cef;
-}
-.color-2 {
-  color: #ffde11;
-}
-.color-3 {
-  color: #fefefe;
-}
-.color-4 {
-  color: #ff3b11;
+  font-family: Lora;
+  color: #000;
+  font-size: 50px;
+  line-height: 0.44;
 }
 
+.job_name {
+  font-size: 30px;
+  line-height: 1;
+  font-weight: normal;
+  color: var(--text-color-decoration);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: rotate(0.12deg);
+}
+
+.heading-top-decoration {
+  position: absolute;
+  top: -10px;
+  left: -35px;
+  z-index: -1;
+}
+
+li {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 550;
+  color: var(--text-nav-decoration);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: rotate(0.12deg);
+  text-decoration: none;
+  list-style: none;
+}
 </style>
