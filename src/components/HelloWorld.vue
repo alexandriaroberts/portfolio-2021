@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <svg
-      class="heading-top-decoration"
+      class="heading-top-decoration-home"
       width="98"
       height="36"
       fill="none"
@@ -10,7 +10,7 @@
       <rect width="98" height="36" fill="#ACF8B8" />
     </svg>
 
-    <h1>Hello, I'm</h1>
+    <h1 class="heading">Hello, I'm</h1>
     <!-- HTML for Split Texting name-->
     <h1 id="name">
       <span class="color-1">A</span>
@@ -91,6 +91,7 @@
 <script>
 import { TimelineLite, TweenMax, Back, Bezier } from "gsap";
 import AppAnimatedIcon from "./icons/AppAnimatedIcon.vue";
+import main from "../assets/css/main.scss";
 export default {
   name: "HelloWorld",
   components: {
@@ -115,11 +116,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.hello {
-  font-family: Lora;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transform: rotate(0.12deg);
-}
+
 
 #name span {
   font-size: 50px;
@@ -128,37 +125,25 @@ export default {
   transform: rotate(0.12deg);
 }
 
-h1 {
-  font-family: Lora;
-  color: #000;
-  font-size: 50px;
-  line-height: 0.44;
-}
-
-.job_name {
-  font-size: 30px;
-  line-height: 1;
-  font-weight: normal;
+.job_name {  
   color: var(--text-color-decoration);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transform: rotate(0.12deg);
 }
 
-.heading-top-decoration {
-  position: absolute;
-  top: -10px;
-  left: -35px;
-  z-index: -1;
-}
-
 li {
   font-size: 1.5rem;
   line-height: 1.5;
-  font-weight: 550;
-  color: var(--text-nav-decoration);
+  font-weight: 550;  
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transform: rotate(0.12deg);
   text-decoration: none;
   list-style: none;
+}
+.heading-top-decoration-home {
+  position: relative;
+  top: 49px;
+  left: -40px;
+  z-index: -1;
 }
 </style>

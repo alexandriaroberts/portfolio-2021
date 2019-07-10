@@ -1,16 +1,16 @@
 <template>
   <div class="home">
     <HelloWorld class="helloworld" />
-    <MorphingArea class="MorphingArea" />
-    <!-- <ButterFly class="butterfly"/> -->
+    <MorphingArea class="MorphingArea" /> 
+    <!-- <ButterFly/> -->
   </div>
 </template>
 
 <script>
 import HelloWorld from "@/components/HelloWorld.vue";
-import MorphingArea from "@/components/MorphingArea.vue";
+import MorphingArea from "../components/MorphingArea";
 import ButterFly from "@/components/ButterFly.vue";
-
+import main from "../assets/css/main.scss";
 export default {
   name: "home",
   components: {
@@ -20,12 +20,9 @@ export default {
   }
 };
 </script>
+
 <style scoped lang="scss">
-.home {
-  font-family: Lora;
-  color: #000;
-  background: var(--main-bg-color);
-}
+
 
 .home {
   display: grid;
