@@ -11,15 +11,9 @@
     </svg>
     <h1 class="heading title">Projects</h1>
     <div class="project__grid">
-       <div    v-for="(project, index) in projects"
-        :key="index" >
-      <img
-     
-        :src="project.image"
-        :title="project.name"
-        :ref="`image_${index}`"
-      />
-       </div>
+      <div v-for="(project, index) in projects" :key="index" ref="image">
+        <img :src="project.image" :title="project.name"/>
+      </div>
     </div>
   </div>
 </template>
@@ -29,7 +23,7 @@ import main from "../assets/css/main.scss";
 export default {
   data() {
     console.log("hey");
-    console.log("this.$refs");
+    //console.log(this.$refs.image_0);
     // console.log(projects.image)
 
     return {
@@ -74,11 +68,10 @@ export default {
     };
   },
   methods: {
-      onClickingProject() {
-        //   if(){
-
-        //   }
-      }
+    onClickingProject() {
+      this.$refs.image_0 = image1;
+       console.log(this.$refs);
+    }
   }
 };
 </script>
@@ -93,7 +86,7 @@ export default {
   position: absolute;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows:1fr 1fr auto; 
+  grid-template-rows: 1fr 1fr auto;
   grid-gap: 2em;
 }
 
