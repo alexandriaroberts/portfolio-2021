@@ -5,35 +5,30 @@
 :root {
   --main-bg-color: #b7278e;
   --word-spacing: 1px;
-  --text-color-decoration: #FFE647;
+  --text-color-decoration: #ffff6c;
   --text-color: #fff;
 }
 html {
-  width: 100vw;
-  height: 100vh;
   background-color: var(--main-bg-color);
-  // overflow: hidden;
+  width: 100%;
+  height: 100%;
   color: var(--text-color);
   word-spacing: var(--word-spacing);
   font-family: "Overpass Mono", monospace;
   font-size: 1.2rem;
   line-height: 1.5;
-  // font-smooth: always;
+  font-smooth: always;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
 #app {
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-  grid-template-rows: 0.2fr 1fr 1fr 0.5fr;
-  // padding: 1em;
+  grid-template-rows: 0.2fr 1fr 1fr 0.3fr;
+  padding: 1em;
 }
 
 #nav {
-  // padding-bottom: 1%;
-  // position: fixed;
-  // top: 0;
-  // left: 15%;
   padding: 2.5rem;
   display: grid;
   grid-auto-flow: column;
@@ -44,18 +39,18 @@ html {
   left: 0;
   right: 0;
 }
+
 .nav__list {
   // font-size: 1.5rem;
-  line-height: 1.5;
-  font-weight: 550;
+    line-height: 1.5;
+  font-weight: 600;
   color: var(--text-color);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transform: rotate(0.12deg);
-  text-decoration: none; 
+  text-decoration: none;
+  letter-spacing: 0.1em;
 }
 
 .nav__list:hover {
-  color: #F86614;
+  color: #f86614;
 }
 
 h1 .heading {
@@ -64,3 +59,23 @@ h1 .heading {
   font-weight: 700;
   text-transform: uppercase;
 }
+
+@media only screen and (min-width: 1904px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+
+
+@media (max-width: 960px) {
+  .heading {
+    font-size: 26px;
+  }
+html {
+  font-size: 1.1rem; 
+  }
+  
+}
+
+

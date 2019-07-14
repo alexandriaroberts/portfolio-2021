@@ -1,7 +1,7 @@
 <template>
   <div class="about-details">
     <AboutDetails class="AboutDetails" />
-    <MorphingArea class="MorphingArea" />
+    <!-- <MorphingArea class="MorphingArea" /> -->
     <!-- <ButterFly class="butterfly"/> -->
   </div>
 </template>
@@ -14,8 +14,7 @@ export default {
   name: "about",
   components: {
     AboutDetails,
-    MorphingArea
-    
+    MorphingArea    
   }
 };
 </script>
@@ -32,5 +31,12 @@ export default {
 .MorphingArea {
  position: relative;
  top: -900px;
+}
+@media (max-width: 760px) {
+  .about-details {
+  grid-column: 2 / 5;
+  grid-row: 2 / 5;  
+ 
+}
 }
 </style>

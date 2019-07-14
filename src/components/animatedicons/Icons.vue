@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <header>
     <!-- Links to the Github, Codepen -->
     <ul class="link-list">
       <li class="link-list__item">
@@ -11,7 +11,7 @@
         >
           <svg
             class="link-list__icon link-list__icon--codepen"
-            viewBox="0 0 48 48"
+            viewBox="0 0 8 8"
             aria-hidden="true"
             focusable="false"
           >
@@ -117,7 +117,7 @@
         </g>
       </symbol>
     </svg>
-  </footer>
+  </header>
 </template>
 
 <script>
@@ -152,43 +152,44 @@ export default {
 
 <style scoped>
 .link-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0 2% 0.5% 2%;
+  list-style-type: none;    
+  line-height: 1.5;
+  font-weight: 550;
+  color: var(--text-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: rotate(0.12deg);
+  text-decoration: none; 
+ 
+ 
 }
 
-.link-list__item {
-  display: inline-block;
-  margin: 0;
-}
 
-.link-list__link {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  position: relative;
-  text-decoration: none;
-}
+
+
 
 .link-list__icon {
-  height: 10vh;
-  width: 10vw;
+  height: 5vh;
+  width: 10vw; 
+  position: absolute; 
+  z-index: 1;
 }
 
 .link-list__icon--codepen {
-  fill: #000;
+ fill: #fff;
+ padding-left: 2.4em;
 }
 
 .link-list__icon--github {
-  fill: #24292e;
-}
+ fill: #fff;
+  padding-left: 4.8em;
+ }
 
 .link-list__icon--twitter {
-  fill: #1da1f2;
+ fill: #fff;
+   padding-left:7.2em;
 }
 
 .link-list__icon--linkedin {
-  fill: rgb(199, 227, 241);
+ fill: #fff;
 }
 </style>

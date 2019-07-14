@@ -12,7 +12,7 @@
     <h1 class="heading title">Projects</h1>
     <div class="project__grid">
       <div v-for="(project, index) in projects" :key="index" ref="image">
-        <img :src="project.image" :title="project.name"/>
+        <img :src="project.image" :title="project.name"  v-on:click="select($project.url)" />
       </div>
     </div>
   </div>
@@ -63,37 +63,54 @@ export default {
           url: "https://codepen.io/iamlexieonearth/full/PaqMRV",
           image:
             "https://res.cloudinary.com/dv3lue3qa/image/upload/v1558501553/magzine1.png"
+        },
+        {
+          name: "Magazine Layout",
+          url: "https://codepen.io/iamlexieonearth/full/PaqMRV",
+          image:
+            "https://res.cloudinary.com/dv3lue3qa/image/upload/v1558501553/magzine1.png"
+        },
+        {
+          name: "Magazine Layout",
+          url: "https://codepen.io/iamlexieonearth/full/PaqMRV",
+          image:
+            "https://res.cloudinary.com/dv3lue3qa/image/upload/v1558501553/magzine1.png"
+        },
+        {
+          name: "Magazine Layout",
+          url: "https://codepen.io/iamlexieonearth/full/PaqMRV",
+          image:
+            "https://res.cloudinary.com/dv3lue3qa/image/upload/v1558501553/magzine1.png"
         }
       ]
     };
   },
   methods: {
-    onClickingProject() {
-      this.$refs.image_0 = image1;
-       console.log(this.$refs);
+    select(project) {
+      window.location.href = project.url;
+      console.log(this.$refs);
     }
   }
 };
 </script>
 
 <style scoped lang="scss">
-.projects {
-  grid-column: 2 / 4;
-  grid-row: 2 / 4;
-}
-
 .project__grid {
-  position: absolute;
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr auto;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-auto-rows: auto;
+  // grid-auto-flow: dense;
   grid-gap: 2em;
+  justify-self: center;
 }
 
-img {
-  width: 300px;
-  height: 250px;
+img { 
+  display: block;
+  width: 400px;
+  height: 300px;
   object-fit: cover;
+ 
 }
 .heading__top__decoration__about {
   position: absolute;

@@ -32,10 +32,13 @@
       <span class="color-2">t</span>
       <span class="color-2">s</span>
     </h1>
-
-    <h3 class="job_name">Front-End Developer</h3>
+    <p>
+      I’m looking for a full time position as a
+      <span class="job_name">front-end developer</span> anywhere in the world or remote.
+      <!-- <h3 class="job_name">Front-End Developer</h3> -->
+    </p>
     <ul>
-      <h3>
+      <div>
         <li>
           <svg
             width="15"
@@ -81,7 +84,7 @@
           </svg>
           CSS Grid/Flexbox
         </li>
-      </h3>
+      </div>
     </ul>
 
     <!-- <AppAnimatedIcon /> -->
@@ -90,12 +93,11 @@
 
 <script>
 import { TimelineLite, TweenMax, Back, Bezier } from "gsap";
-import AppAnimatedIcon from "./icons/AppAnimatedIcon.vue";
 import main from "../assets/css/main.scss";
 export default {
   name: "HelloWorld",
   components: {
-    AppAnimatedIcon
+   
   },
   props: {
     msg: String
@@ -116,8 +118,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
-
 #name span {
   font-size: 50px;
   font-weight: 400;
@@ -125,18 +125,11 @@ export default {
   transform: rotate(0.12deg);
 }
 
-.job_name {  
+.job_name {
   color: var(--text-color-decoration);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transform: rotate(0.12deg);
 }
 
 li {
-  font-size: 1.5rem;
-  line-height: 1.5;
-  font-weight: 550;  
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transform: rotate(0.12deg);
   text-decoration: none;
   list-style: none;
 }

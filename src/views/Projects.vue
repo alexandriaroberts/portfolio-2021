@@ -18,11 +18,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.project-details {
+.project-details { 
+  
   grid-column: 2 / 4;
-  grid-row: 1 / 3;   
+  grid-row: 1 / 5;
   padding-top: 2.5em;
-}
+  }
 
 // .MorphingArea {
 //   // position: relative;

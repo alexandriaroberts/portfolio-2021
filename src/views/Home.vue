@@ -24,17 +24,16 @@ export default {
 <style scoped lang="scss">
 
 
-.home {
-  display: grid;
-  grid-column: 2 / 5;
-  grid-row: 2 / 4;
-  grid-template-columns: subgrid;
-  grid-template-rows: repeat(3, 1fr);
+.home { 
+  grid-column: 2 / 4;
+  grid-row: 2 / 5;
+  // grid-template-columns: subgrid;
+  // grid-template-rows: repeat(3, 1fr);
 }
 
 .MorphingArea {
-  position: relative;
-  grid-column: 2;
-  grid-row: 1 / 4;
+  position: absolute;
+  top: 0;
+  right: 153px;
 }
 </style>

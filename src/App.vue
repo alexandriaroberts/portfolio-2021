@@ -37,17 +37,28 @@
      
     </div>
     <router-view />
+    <!-- <Icons class="icon"/> -->
+    <Footer class="footer"/>
   </div>
 </template>
 
 <script>
+import Footer from "../src/components/footer";
+import Icons from "./components/animatedicons/Icons";
 import main from "./assets/css/main.scss";
+
 export default {
-  
+  name: "home",
+  components: {
+   Icons,
+   Footer   
+  }
 }
 </script>
 
 <style lang="scss">
+
+
 
 .heading-top-decoration {
   position: relative;
