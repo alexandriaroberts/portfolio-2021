@@ -1,18 +1,9 @@
 <template>
   <div class="projects">
-    <svg
-      class="heading__top__decoration__about"
-      width="98"
-      height="36"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect width="98" height="36" fill="#ACF8B8" />
-    </svg>
     <h1 class="heading title">Projects</h1>
     <div class="project__grid">
       <div v-for="(project, index) in projects" :key="index" ref="image">
-        <img :src="project.image" :title="project.name"  v-on:click="select($project.url)" />
+        <img :src="project.image" :title="project.name" v-on:click="select($project.url)" />
       </div>
     </div>
   </div>
@@ -105,12 +96,11 @@ export default {
   justify-self: center;
 }
 
-img { 
+img {
   display: block;
   width: 400px;
   height: 300px;
   object-fit: cover;
- 
 }
 .heading__top__decoration__about {
   position: absolute;

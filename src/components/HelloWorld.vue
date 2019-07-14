@@ -1,16 +1,6 @@
 <template>
   <div class="hello">
-    <svg
-      class="heading-top-decoration-home"
-      width="98"
-      height="36"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect width="98" height="36" fill="#ACF8B8" />
-    </svg>
-
-    <h1 class="heading">Hello, I'm</h1>
+     <h1 class="heading">Hello, I'm</h1>
     <!-- HTML for Split Texting name-->
     <h1 id="name">
       <span class="color-1">A</span>

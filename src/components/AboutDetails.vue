@@ -1,15 +1,7 @@
 <template>
   <div class="about">
     <img class="profile-picture" src="../assets/images/profile-picture.jpeg" />
-    <svg
-      class="heading-top-decoration-about"
-      width="98"
-      height="36"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect width="98" height="36" fill="#ACF8B8" />
-    </svg>
+
     <h1 class="heading title">{{ details.title }}</h1>
     <p class="content paragraph__1">
       I am a
@@ -21,14 +13,24 @@
     </p>
 
     <p class="content paragraph__2">
-     Fast forward few years later, found myself working on a friends wordpress site & realised how much I
-      <span class="about__text-decoration">love</span> coding, working on problem. Since then I started learning to code while doing part-time jobs.
-      I also started to work as a <span class="about__text-decoration"> volunteer developer </span> at <a href="shelovesdata.com" class="link-job">she loves data</a> to gain experinece & help. So far I have done few projects including this portfolio, a game in
-      <span class="about__text-decoration">VueJS</span>,
+      Fast forward few years later, found myself working on a friends wordpress site & realised how much I
+      <span
+        class="about__text-decoration"
+      >love</span> coding, working on problem. Since then I started learning to code while doing part-time jobs.
+      I also started to work as a
+      <span class="about__text-decoration">volunteer developer</span> at
+      <a href="shelovesdata.com" class="link-job">she loves data</a> to gain experinece & help. So far I have done few projects including this portfolio, a game in
+      <span
+        class="about__text-decoration"
+      >VueJS</span>,
       few projects on CSS Grid. I also have found myself loving
-      <span class="about__text-decoration">JavaScript</span> despite finding it challenging at times. you can see it on Github or Codepen.
+      <span
+        class="about__text-decoration"
+      >JavaScript</span> despite finding it challenging at times. you can see it on Github or Codepen.
       Currently, I am doing my portfolio as you see, using
-      <span class="about__text-decoration">SVG</span>and
+      <span
+        class="about__text-decoration"
+      >SVG</span>and
       <span class="about__text-decoration">VueJS</span>to add animations
       and create an interactive portfolio, this is what I am working on.
     </p>
@@ -59,7 +61,6 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr 0.5fr;
   grid-template-rows: 1fr 1fr;
- 
 }
 
 .profile-picture {
@@ -73,16 +74,16 @@ export default {
   align-self: start;
   grid-column: 1;
   grid-row: 1;
- }
+}
 
 .paragraph__1 {
   grid-column: 1;
   grid-row: 1;
   align-self: start;
-  padding-top: 5em;
+  padding-top: 5rem;
 }
 
-.paragraph__2 { 
+.paragraph__2 {
   grid-column: 1 / 3;
   grid-row: 2 / 3;
 }
@@ -90,7 +91,7 @@ export default {
 .content {
   max-width: 35em;
   color: var(--text-color-decoration);
-  }
+}
 
 .about__text-decoration {
   color: var(--text-color);
@@ -100,7 +101,7 @@ export default {
 }
 
 .link-job {
-  color:  #f86614;
+  color: #f86614;
   font-style: italic;
   font-size: 1.1rem;
   text-decoration: none;
@@ -108,7 +109,6 @@ export default {
 
 .link-job:hover {
   text-decoration: underline;
-
 }
 
 img {
@@ -126,40 +126,37 @@ img {
 }
 
 @media (max-width: 760px) {
- .profile-picture {
-  grid-column:  1 / 2;
-  grid-row: 1;
-  justify-self: center;
-  padding-top: 5em;
-}
-
-img {
-  width: 60vw;
-  height: 50vh;
-  object-fit: cover;
-  border-radius: 1%;
-}
-
-
-.paragraph__1 {
-  grid-column: 1 / 3;
-  grid-row: 1;
-  align-self: end;
- justify-self: center;
-}
-
-.paragraph__2 { 
-  grid-column: 1 / 3;
-  grid-row: 2;
- justify-self: center;
-}
- 
- .content {
-  max-width: 25em;
-  /* text-align: center; */
-  padding-top: 5em;
+  .profile-picture {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    justify-self: center;
+    padding-top: 5em;
   }
- 
-}
 
+  img {
+    width: 60vw;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 1%;
+  }
+
+  .paragraph__1 {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    align-self: end;
+    justify-self: center;
+  }
+
+  .paragraph__2 {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    justify-self: center;
+  }
+
+  .content {
+    max-width: 25em;
+    /* text-align: center; */
+    padding-top: 5em;
+  }
+}
 </style>

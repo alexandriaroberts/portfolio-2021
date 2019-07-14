@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <HelloWorld class="helloworld" />
-    <MorphingArea class="MorphingArea" /> 
+    <!-- <MorphingArea class="MorphingArea" />  -->
     <!-- <ButterFly/> -->
   </div>
 </template>
@@ -22,13 +22,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
-
-.home { 
+.home {
   grid-column: 2 / 4;
   grid-row: 2 / 5;
-  // grid-template-columns: subgrid;
-  // grid-template-rows: repeat(3, 1fr);
+  padding-top: 2.5rem;
 }
 
 .MorphingArea {
