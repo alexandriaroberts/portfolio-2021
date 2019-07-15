@@ -1,8 +1,8 @@
 <template>
+<!-- About page -->
   <div class="about-details">
     <AboutDetails class="AboutDetails" />
-    <!-- <MorphingArea class="MorphingArea" /> -->
-    <!-- <ButterFly class="butterfly"/> -->
+    <!-- <MorphingArea class="MorphingArea" /> --> 
   </div>
 </template>
 
@@ -20,8 +20,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
-
 .about-details {
   grid-column: 2 / 5;
   grid-row: 2 / 4;  
@@ -32,6 +30,7 @@ export default {
  position: relative;
  top: -900px;
 }
+// CSS for Mobile View
 @media (max-width: 760px) {
   .about-details {
   grid-column: 2 / 5;

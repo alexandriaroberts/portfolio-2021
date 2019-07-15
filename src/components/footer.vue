@@ -1,5 +1,6 @@
 <template>
   <footer>
+    <!-- Footer Component-->
     <div class="about-content__social">
       <div class="about-content__social-title">You can find me here:</div>
       <div

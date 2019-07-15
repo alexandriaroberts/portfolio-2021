@@ -1,7 +1,7 @@
 <template>
   <div class="about">
+    <!-- HTML for About Page, child component-->
     <img class="profile-picture" src="../assets/images/profile-picture.jpeg" />
-
     <h1 class="heading title">{{ details.title }}</h1>
     <p class="content paragraph__1">
       I am a
@@ -30,8 +30,8 @@
       Currently, I am doing my portfolio as you see, using
       <span
         class="about__text-decoration"
-      >SVG</span>and
-      <span class="about__text-decoration">VueJS</span>to add animations
+      >SVG</span> and
+      <span class="about__text-decoration">VueJS </span>to add animations
       and create an interactive portfolio, this is what I am working on.
     </p>
   </div>
@@ -47,11 +47,6 @@ export default {
         title: "About Me"
       }
     };
-  },
-  methods: {
-    aboutMouseoverEffect() {
-      color: "red";
-    }
   }
 };
 </script>
@@ -97,7 +92,6 @@ export default {
   color: var(--text-color);
   text-transform: uppercase;
   font-size: 1.3rem;
-  /* text-decoration: underline; */
 }
 
 .link-job {
@@ -155,7 +149,6 @@ img {
 
   .content {
     max-width: 25em;
-    /* text-align: center; */
     padding-top: 5em;
   }
 }

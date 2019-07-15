@@ -1,20 +1,20 @@
 <template>
   <div class="home">
-    <HelloWorld class="helloworld" />
+    <HomeDetails class="homeDetails" />
     <!-- <MorphingArea class="MorphingArea" />  -->
     <!-- <ButterFly/> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from "@/components/HelloWorld.vue";
+import HomeDetails from "@/components/HomeDetails.vue";
 import MorphingArea from "../components/MorphingArea";
 import ButterFly from "@/components/ButterFly.vue";
 import main from "../assets/css/main.scss";
 export default {
   name: "home",
   components: {
-    HelloWorld,
+    HomeDetails,
     MorphingArea,
     ButterFly
   }

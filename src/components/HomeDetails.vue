@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <!-- HomeDetails Child Component for Home Page -->
      <h1 class="heading">Hello, I'm</h1>
     <!-- HTML for Split Texting name-->
     <h1 id="name">
@@ -24,7 +25,7 @@
     </h1>
     <p>
       I’m looking for a full time position as a
-      <span class="job_name">front-end developer</span> anywhere in the world or remote.
+      <span class="job_name"> junior front-end developer</span> anywhere in the world or remote.
       <!-- <h3 class="job_name">Front-End Developer</h3> -->
     </p>
     <ul>
