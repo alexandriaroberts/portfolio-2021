@@ -130,4 +130,10 @@ li {
   left: -40px;
   z-index: -1;
 }
+
+@media (max-width: 760px) {
+  #name span { 
+  font-size: 30px;
+  }
+}
 </style>
