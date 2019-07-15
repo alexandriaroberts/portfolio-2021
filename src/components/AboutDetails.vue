@@ -22,7 +22,7 @@
       <a href="shelovesdata.com" class="link-job">she loves data</a> to gain experinece & help. So far I have done few projects including this portfolio, a game in
       <span
         class="about__text-decoration"
-      >VueJS</span>,
+      >VueJS</span> & 
       few projects on CSS Grid. I also have found myself loving
       <span
         class="about__text-decoration"
