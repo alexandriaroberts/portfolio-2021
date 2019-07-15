@@ -70,7 +70,6 @@ a {
 }
 
 a:hover {
-  color: #f86614;
-
-}
+  color: var(--text-color-secondary);
+  }
 </style>

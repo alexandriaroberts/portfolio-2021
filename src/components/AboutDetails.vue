@@ -95,7 +95,7 @@ export default {
 }
 
 .link-job {
-  color: #f86614;
+  color: var(--text-color-secondary);
   font-style: italic;
   font-size: 1.1rem;
   text-decoration: none;

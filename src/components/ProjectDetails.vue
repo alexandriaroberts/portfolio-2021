@@ -1,4 +1,5 @@
 <template>
+<!-- Project details -->
   <div class="projects">
     <h1 class="heading title">Projects</h1>
     <div class="project__grid">
@@ -97,12 +98,15 @@ img {
   width: 100%;
   height: 300px;
   object-fit: cover;
+  border-radius: 2%;
+
 }
 
 .projectImage {
   display: block;
   background: #acf8b8;
   cursor: pointer;
+  border-radius: 2%;
 }
 
 .projectImage:hover {
@@ -114,7 +118,10 @@ img {
 
 .project-title {
   text-align: center;
-  padding: 0;
-  color: #f86614;
+  line-height: 1.5;
+  font-weight: 600;
+  color: var(--text-color-secondary);
+  text-decoration: none;
+  letter-spacing: 0.1em;
 }
 </style>

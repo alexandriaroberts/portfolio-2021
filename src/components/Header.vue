@@ -1,5 +1,5 @@
-<template>
- 
+<template> 
+<!-- Header navigation-->
     <div id="nav">
       <router-link class="nav__list" to="/">
         <svg
