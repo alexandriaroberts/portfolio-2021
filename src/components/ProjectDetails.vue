@@ -38,7 +38,7 @@ export default {
           name: "Nasa API VueJS",
           url: "https://codepen.io/iamlexieonearth/full/vwPRPY",
           image:
-            "https://res.cloudinary.com/dv3lue3qa/image/upload/v1562729592/nasa.png"
+            "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563188270/NasaAPI.png"
         },
         {
           name: "CSS Grid Poster",
