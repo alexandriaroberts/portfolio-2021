@@ -3,10 +3,7 @@
     <!-- Footer Component-->
     <div class="about-content__social">
       <div class="about-content__social-title">You can find me here:</div>
-      <div
-        class="about-content__networks"
-       
-      >
+      <div class="about-content__networks">
         <div class="about-content__network">
           <a
             href="https://twitter.com/iamlexieonearth"
@@ -71,5 +68,21 @@ a {
 
 a:hover {
   color: var(--text-color-secondary);
+}
+
+@media (max-width: 960px) {
+  footer {
+    grid-column: 2 / 4;
   }
+}
+
+@media (max-width: 460px) {
+  footer {
+    grid-column: 2 / 4;
+  }
+  .about-content__networks {
+    grid-auto-flow: row;
+    justify-content: center;
+  }
+}
 </style>

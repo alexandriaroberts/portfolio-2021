@@ -133,7 +133,11 @@ li {
 
 @media (max-width: 760px) {
   #name span { 
-  font-size: 30px;
+  font-size: 20px;
+  }
+
+  h1 {
+  font-size: 22px;
   }
 }
 </style>

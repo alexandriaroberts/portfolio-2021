@@ -30,4 +30,14 @@ export default {
 //   grid-column: 2;
 //   grid-row: 1 / 4;
 // }
+
+
+@media (max-width: 490px) {
+.project-details {   
+  grid-column: 1 / 5;
+  grid-row: 1 / 5;
+  padding-top: 5rem; 
+ justify-self: center;
+  }
+}
 </style>

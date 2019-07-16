@@ -1,8 +1,8 @@
 <template> 
 <!-- Header navigation-->
-    <div id="nav">
+    <header id="nav">
       <router-link class="nav__list" to="/">
-        <svg
+        <!-- <svg
           class="heading-top-decoration nav__home"
           width="78"
           height="36"
@@ -10,10 +10,11 @@
           xmlns="http://www.w3.org/2000/svg"
         >
           <rect width="78" height="36" fill="#ACF8B8" />
-        </svg>Home
+        </svg> -->
+        Home
       </router-link>
       <router-link class="nav__list" to="/about">
-        <svg
+        <!-- <svg
           class="heading-top-decoration nav__about"
           width="78"
           height="36"
@@ -21,10 +22,11 @@
           xmlns="http://www.w3.org/2000/svg"
         >
           <rect width="88" height="36" fill="#ACF8B8" />
-        </svg>About
+        </svg> -->
+        About
       </router-link>
       <router-link class="nav__list" to="/projects">
-        <svg
+        <!-- <svg
           class="heading-top-decoration nav__projects"
           width="78"
           height="36"
@@ -32,10 +34,11 @@
           xmlns="http://www.w3.org/2000/svg"
         >
           <rect width="78" height="36" fill="#ACF8B8" />
-        </svg>Projects
+        </svg> -->
+        Projects
       </router-link>
      
-    </div>
+    </header>
   
   
   
@@ -54,10 +57,12 @@ export default {
 </script>
 
 <style lang="scss">
-.heading-top-decoration {
-  position: relative;
-  z-index: -1;
-  top: -14px;
-  left: 35px;
-}
+// .heading-top-decoration {
+//   position: relative;
+//   z-index: -1;
+//   top: -14px;
+//   left: 35px;
+// }
+
+
 </style>

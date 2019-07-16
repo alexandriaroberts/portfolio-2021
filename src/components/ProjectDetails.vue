@@ -1,5 +1,5 @@
 <template>
-<!-- Project details -->
+  <!-- Project details -->
   <div class="projects">
     <h1 class="heading title">Projects</h1>
     <div class="project__grid">
@@ -83,37 +83,43 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.title {
+  align-self: start;
+  grid-column: 1;
+  grid-row: 1;
+}
 .project__grid {
-  position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: auto;
-  // grid-auto-flow: dense;
+  grid-auto-flow: dense;
   grid-gap: 3em;
   justify-self: center;
 }
 
 img {
-  display: in-block;
   width: 100%;
   height: 300px;
   object-fit: cover;
   border-radius: 2%;
-
+  position: relative;
 }
 
 .projectImage {
-  display: block;
   background: #acf8b8;
   cursor: pointer;
   border-radius: 2%;
+  display: block;
+  grid-auto-flow: column;
+  top: 0;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .projectImage:hover {
   transform: scaleY(1.05);
-  transition: 0.5 linear;  
-  box-shadow: 0 1px 2px rgba(0,0,0,0.11),
-    0 8px 0px #acf8b8;
+  transition: 0.5 linear;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.11), 0 8px 0px #acf8b8;
 }
 
 .project-title {
@@ -123,5 +129,19 @@ img {
   color: var(--text-color-secondary);
   text-decoration: none;
   letter-spacing: 0.1em;
+}
+
+@media (max-width: 760px) {
+  
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 490px) {
+ 
+  .title {
+    text-align: center;
+  }
 }
 </style>

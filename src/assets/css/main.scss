@@ -3,10 +3,10 @@
 // background: #181818
 // color: #FFF;
 :root {
-  --main-bg-color: #b7278e;
+  --main-bg-color: #921f72;
   --word-spacing: 1px;
-  --text-color-decoration: #ffff6c;
-  --text-color: #fff;
+  --text-color-decoration: #F1F227;
+  --text-color: #FFF;
   --text-color-secondary: #f86614;
 }
 html {
@@ -16,7 +16,10 @@ html {
   color: var(--text-color);
   word-spacing: var(--word-spacing);
   font-family: "Overpass Mono", monospace;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  // font-weight: 580;
+  // text-shadow: 0px 9px 9px rgba(0, 0, 0, 0.25);
+  // transform: rotate(0.12deg);
   line-height: 1.5;
   font-smooth: always;
   -moz-osx-font-smoothing: grayscale;
@@ -42,13 +45,13 @@ html {
 }
 
 .nav__list {
-  // font-size: 1.5rem;
-   line-height: 1.5;
+  line-height: 1.5;
   font-weight: 600;
   color: var(--text-color);
   text-decoration: none;
   letter-spacing: 0.1em;
-}
+  padding: 1em;
+ }
 
 .nav__list:hover {
   color: var(--text-color-secondary);
@@ -70,13 +73,24 @@ h1 .heading {
 
 
 @media (max-width: 960px) {
-  .heading {
-    font-size: 26px;
+  h1 .heading .title{
+    font-size: 0.9em;
   }
 html {
-  font-size: 1.1rem; 
+  font-size: 1rem; 
+  }  
+ }
+
+ @media (max-width: 460px) {
+   #nav {
+    padding-bottom: 0;
+   }
+   h1 .heading {
+    h1 {
+      font-size: 22px;
+      }
   }
-  
-}
-
-
+html {
+  font-size: 1rem; 
+  } 
+ }

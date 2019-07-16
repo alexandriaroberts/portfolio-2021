@@ -33,4 +33,11 @@ export default {
   top: 0;
   right: 153px;
 }
+
+@media (max-width: 760px) {
+  .home {
+  padding-top: 4.5rem;
+}
+
+}
 </style>
