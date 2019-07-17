@@ -21,22 +21,22 @@
       <span
         class="about__text-decoration"
       >volunteer developer</span> at
-      <a href="shelovesdata.com" class="link-job">she loves data</a> to gain experinece & help with their website. So far I have done few projects including this portfolio, a game in
+      <a href="shelovesdata.com" class="link-job">she loves data</a> to gain experinece & help with their website.<br><br>
+      So far I have done few projects including this portfolio, a game in
       <span
         class="about__text-decoration"
       >VueJS</span> &
       few projects on CSS Grid. I also have found myself loving
       <span
         class="about__text-decoration"
-      >JavaScript</span> despite finding it challenging at times. You can see all my code on Github or Codepen. <br><br>
-      Currently, I am doing my portfolio as you see, using
-      <span
-        class="about__text-decoration"
-      >SVG</span> and
-      <span class="about__text-decoration">VueJS</span>to add animations
-      and create an interactive portfolio, this is what I am working on.
+      >JavaScript</span> despite finding it challenging at times. You can see all my code on  <span
+        class="about__text-decoration"> Github </span> or <span class="about__text-decoration"> Codepen</span>. <br><br>
+      Currently, I am living in Bali and looking for a junior position with a supportive team where I can expand my skills and grow as
+      a developer, my interest lies in<span class="about__text-decoration"> JavaScript</span>, <span class="about__text-decoration"> SVG</span> and
+      <span class="about__text-decoration">VueJS</span>. I also love working with <span class="about__text-decoration">CSS Grid</span>.
     </p>
-  </div>
+    <p class="content paragraph__3">If you are intrested in working with me, please feel free to message me. I would love to hear from you, I need a job!😃 I love talking about code or if you need some encouragement in your coding journey, would love to talk about it or help you in your journey to be a developer too.😊</p>
+ </div>
 </template>
 
 <script>
@@ -63,9 +63,9 @@ export default {
 .profile-picture {
   grid-column: 2;
   grid-row: 1;
-  align-self: center;
-  padding: 1em;
-}
+  align-self: center;  
+  justify-self: center;  
+ }
 
 .title {
   align-self: start;
@@ -76,14 +76,20 @@ export default {
 .paragraph__1 {
   grid-column: 1;
   grid-row: 1;
-  align-self: start;
-  padding-top: 5rem;
-}
+  align-self: center;
+ }
 
 .paragraph__2 {
   grid-column: 1 / 3;
   grid-row: 2 / 3;
 }
+
+.paragraph__3 {
+  grid-column: 1 / 3;
+  grid-row: 3;
+  align-self: end;
+}
+
 
 .content {
   max-width: 35em;
@@ -114,12 +120,6 @@ img {
   border-radius: 5%;
 }
 
-.heading-top-decoration-about {
-  position: absolute;
-  top: 120px;
-  left: 200px;
-  z-index: -1;
-}
 
 @media (max-width: 760px) {
   .profile-picture {
