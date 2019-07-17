@@ -61,7 +61,7 @@ export default {
 .profile-picture {
   grid-column: 2;
   grid-row: 1;
-  justify-self: center;
+  align-self: center;
   padding: 1em;
 }
 
@@ -123,15 +123,15 @@ img {
   .profile-picture {
     grid-column: 1 / 2;
     grid-row: 1;
-    justify-self: center;
-    padding-top: 5em;
+    align-self: start;
+   
   }
 
   img {
     width: 60vw;
-    height: 50vh;
+    height: 40vh;
     object-fit: cover;
-    border-radius: 1%;
+    border-radius: 2%;
   }
 
   .paragraph__1 {

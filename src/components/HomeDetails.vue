@@ -73,7 +73,7 @@
               fill="#ACF8B8"
             />
           </svg>
-          CSS Grid/Flexbox
+          HTML/CSS 
         </li>
       </div>
     </ul>

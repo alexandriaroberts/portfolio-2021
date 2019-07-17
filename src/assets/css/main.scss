@@ -5,9 +5,9 @@
 :root {
   --main-bg-color: #921f72;
   --word-spacing: 1px;
-  --text-color-decoration: #F1F227;
-  --text-color: #FFF;
-  --text-color-secondary: #f86614;
+  --text-color-decoration: #FFFACD;
+  --text-color: #FEFEFE;
+  --text-color-secondary: #ACF8B8;
 }
 html {
   background-color: var(--main-bg-color);
@@ -77,7 +77,7 @@ h1 .heading {
     font-size: 0.9em;
   }
 html {
-  font-size: 1rem; 
+  font-size: 1.2rem; 
   }  
  }
 

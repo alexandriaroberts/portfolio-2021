@@ -126,7 +126,7 @@ img {
   text-align: center;
   line-height: 1.5;
   font-weight: 600;
-  color: var(--text-color-secondary);
+  color: var(--main-bg-color);
   text-decoration: none;
   letter-spacing: 0.1em;
 }
