@@ -16,22 +16,24 @@
       Fast forward few years later, found myself working on a friends wordpress site & realised how much I
       <span
         class="about__text-decoration"
-      >love</span> coding, working on problem. Since then I started learning to code while doing part-time jobs.
+      >love</span> coding, working on a problem and finding solutions to it. Since then I started learning to code while doing part-time jobs.
       I also started to work as a
-      <span class="about__text-decoration">volunteer developer</span> at
-      <a href="shelovesdata.com" class="link-job">she loves data</a> to gain experinece & help. So far I have done few projects including this portfolio, a game in
       <span
         class="about__text-decoration"
-      >VueJS</span> & 
+      >volunteer developer</span> at
+      <a href="shelovesdata.com" class="link-job">she loves data</a> to gain experinece & help with their website. So far I have done few projects including this portfolio, a game in
+      <span
+        class="about__text-decoration"
+      >VueJS</span> &
       few projects on CSS Grid. I also have found myself loving
       <span
         class="about__text-decoration"
-      >JavaScript</span> despite finding it challenging at times. you can see it on Github or Codepen.
+      >JavaScript</span> despite finding it challenging at times. You can see all my code on Github or Codepen. <br><br>
       Currently, I am doing my portfolio as you see, using
       <span
         class="about__text-decoration"
       >SVG</span> and
-      <span class="about__text-decoration">VueJS </span>to add animations
+      <span class="about__text-decoration">VueJS</span>to add animations
       and create an interactive portfolio, this is what I am working on.
     </p>
   </div>
@@ -109,7 +111,7 @@ img {
   width: 250px;
   height: 250px;
   object-fit: cover;
-  border-radius: 10%;
+  border-radius: 5%;
 }
 
 .heading-top-decoration-about {
@@ -123,15 +125,7 @@ img {
   .profile-picture {
     grid-column: 1 / 2;
     grid-row: 1;
-    align-self: start;
-   
-  }
-
-  img {
-    width: 60vw;
-    height: 40vh;
-    object-fit: cover;
-    border-radius: 2%;
+    align-self: center;
   }
 
   .paragraph__1 {
@@ -149,7 +143,14 @@ img {
 
   .content {
     max-width: 25em;
-    padding-top: 5em;
+    padding-top: 3em;
+  }
+}
+
+@media (max-width: 460px) {
+  .profile-picture {
+    align-self: start;
+    padding-top: 6em;
   }
 }
 </style>
