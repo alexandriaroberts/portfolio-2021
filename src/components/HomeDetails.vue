@@ -112,7 +112,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 #name span {
-  font-size: 5vw;
+  font-size: 3.5vw;
   font-weight: 900;
   font-family: 'Playfair Display', serif;
   color: var( --text-color-decoration);

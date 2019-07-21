@@ -15,7 +15,7 @@
           <a
             href="https://github.com/alexandriaroberts"
             target="_blank"
-            class="about-content__network__link"
+            class="about-content__github__link"
           >Github</a>
         </div>
         <div class="about-content__network">
@@ -68,6 +68,10 @@ a {
 
 a:hover {
   color: var(--text-color);
+}
+
+about-content__github__link:hover {
+  background: url(./animatedicons/github.svg);
 }
 
 @media (max-width: 960px) {

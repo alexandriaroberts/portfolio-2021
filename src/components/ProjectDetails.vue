@@ -123,14 +123,14 @@ img {
   box-shadow: 0 1px 2px rgb(196, 23, 23), 0 8px 0px rgb(196, 23, 23);
 }
 
-// .project-title {
-//   text-align: center;
-//   // line-height: 1.5;
-//   font-weight: 600;
-//   color: var(--main-bg-color);
-//   text-decoration: none;
-//   letter-spacing: 0.1em;
-// }
+.project-title {
+  text-align: center;
+  // line-height: 1.5;
+  font-weight: 600;
+  color: var(--main-bg-color);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+}
 
 @media (max-width: 760px) {
   
