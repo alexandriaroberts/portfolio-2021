@@ -1,8 +1,9 @@
 <template>
   <div class="hello">
     <!-- HomeDetails Child Component for Home Page -->
-     <h1 class="heading">Hello, I'm</h1>
+     <h2>Hello, <i>I'm</i></h2>
     <!-- HTML for Split Texting name-->
+    <div role="name">
     <h1 id="name">
       <span class="color-1">A</span>
       <span class="color-2">l</span>
@@ -23,15 +24,16 @@
       <span class="color-2">t</span>
       <span class="color-2">s</span>
     </h1>
+    </div>
     <p>
       I’m looking for a full time position as a
       <span class="job_name"> junior front-end developer</span> anywhere in the world or remote.
       <!-- <h3 class="job_name">Front-End Developer</h3> -->
     </p>
-    <ul>
+    <ul role="list">
       <div>
-        <li>
-          <svg
+        <li role="listitem">
+          <svg 
             width="15"
             height="15"
             viewBox="0 0 15 15"
@@ -40,12 +42,12 @@
           >
             <path
               d="M15 7.5C15 11.6421 11.6421 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5Z"
-              fill="#ACF8B8"
+              fill="rgb(196, 23, 23)"
             />
           </svg>
           VueJS
         </li>
-        <li>
+        <li role="listitem">
           <svg
             width="15"
             height="15"
@@ -55,12 +57,12 @@
           >
             <path
               d="M15 7.5C15 11.6421 11.6421 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5Z"
-              fill="#ACF8B8"
+              fill="rgb(196, 23, 23)"
             />
           </svg>
           JavaScript
         </li>
-        <li>
+        <li role="listitem">
           <svg
             width="15"
             height="15"
@@ -70,7 +72,7 @@
           >
             <path
               d="M15 7.5C15 11.6421 11.6421 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5Z"
-              fill="#ACF8B8"
+              fill="rgb(196, 23, 23)"
             />
           </svg>
           HTML/CSS 
@@ -110,14 +112,17 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 #name span {
-  font-size: 50px;
-  font-weight: 400;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 5vw;
+  font-weight: 900;
+  font-family: 'Playfair Display', serif;
+  color: var( --text-color-decoration);
   transform: rotate(0.12deg);
+  word-spacing: .5em;
 }
 
 .job_name {
   color: var(--text-color-decoration);
+  font-style: italic; 
 }
 
 li {

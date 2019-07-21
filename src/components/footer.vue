@@ -49,7 +49,7 @@ footer {
   grid-column: 2 / 4;
   grid-row: 5;
   z-index: 1;
-  padding-top: 1.5em;
+  /* padding-top: 1em; */
 }
 .about-content__networks {
   position: relative;
@@ -60,14 +60,14 @@ footer {
 }
 
 a {
-  color: var(--text-color);
+  color: var( --text-color-secondary);
   font-weight: bold;
   text-decoration: none;
   padding-left: 6px;
 }
 
 a:hover {
-  color: var(--text-color-secondary);
+  color: var(--text-color);
 }
 
 @media (max-width: 960px) {

@@ -8,8 +8,9 @@
         :key="index"
         ref="projectImage"
         class="projectImage"
+        role="projectItem"
       >
-        <img :src="project.image" :title="project.name" v-on:click="select(project.url)" />
+        <img :src="project.image" :title="project.name" v-on:click="select(project.url)" alt="project.title"/>
         <p class="project-title">{{ project.name }}</p>
       </div>
     </div>
@@ -101,14 +102,14 @@ img {
   width: 100%;
   height: 300px;
   object-fit: cover;
-  border-radius: 2%;
+  // border-radius: 2%;
   position: relative;
 }
 
 .projectImage {
-  background: #acf8b8;
+  background: rgb(196, 23, 23);
   cursor: pointer;
-  border-radius: 2%;
+  // border-radius: 2%;
   display: block;
   grid-auto-flow: column;
   top: 0;
@@ -119,17 +120,17 @@ img {
 .projectImage:hover {
   transform: scaleY(1.05);
   transition: 0.5 linear;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.11), 0 8px 0px #acf8b8;
+  box-shadow: 0 1px 2px rgb(196, 23, 23), 0 8px 0px rgb(196, 23, 23);
 }
 
-.project-title {
-  text-align: center;
-  line-height: 1.5;
-  font-weight: 600;
-  color: var(--main-bg-color);
-  text-decoration: none;
-  letter-spacing: 0.1em;
-}
+// .project-title {
+//   text-align: center;
+//   // line-height: 1.5;
+//   font-weight: 600;
+//   color: var(--main-bg-color);
+//   text-decoration: none;
+//   letter-spacing: 0.1em;
+// }
 
 @media (max-width: 760px) {
   
