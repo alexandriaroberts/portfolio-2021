@@ -10,7 +10,12 @@
         class="projectImage"
         role="projectItem"
       >
-        <img :src="project.image" :title="project.name" v-on:click="select(project.url)" alt="project.title"/>
+        <img
+          :src="project.image.imageURL"
+          :alt="project.image.alt"
+          :title="project.name"
+          v-on:click="select(project.url)"
+        />
         <p class="project-title">{{ project.name }}</p>
       </div>
     </div>
@@ -26,50 +31,74 @@ export default {
         {
           name: "Flower VueJs Game",
           url: "https://codepen.io/iamlexieonearth/full/QYNmEa",
-          image:
-            "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563170890/Flower_Game_in_VueJS.png"
+          image: {
+            imageURL:
+              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563170890/Flower_Game_in_VueJS.png",
+            alt: "Flower VueJs Game, player clicks on the flower and get points for clickig on them"
+          }
         },
         {
           name: "Space Game with Canvas",
           url: "https://codepen.io/iamlexieonearth/full/KEoMye",
-          image:
-            "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563170891/Space_Game_with_Canvas.png"
+          image: {
+            imageURL:
+              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563170891/Space_Game_with_Canvas.png",
+            alt: "Space Game with Canvas, player plays with key board and catches an alien"
+          }
         },
         {
           name: "Nasa API VueJS",
           url: "https://codepen.io/iamlexieonearth/full/vwPRPY",
-          image:
-            "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563188270/NasaAPI.png"
+          image: {
+            imageURL:
+              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563188270/NasaAPI.png",
+            alt: "Nasa API VueJS Project to render images from NaSa"
+          }
         },
         {
           name: "CSS Grid Poster",
           url: "https://codepen.io/iamlexieonearth/full/aKOzyL",
-          image:
-            "https://res.cloudinary.com/dv3lue3qa/image/upload/v1562737397/poster.png"
+          image: {
+            imageURL:
+              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1562737397/poster.png",
+            alt: "CSS Grid Poster"
+          }
         },
         {
           name: "Product Landing Page",
           url: "https://codepen.io/iamlexieonearth/full/zLzdLJ",
-          image:
-            "https://res.cloudinary.com/dv3lue3qa/image/upload/v1562737777/product-landing-page.png"
+          image: {
+            imageURL:
+              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1562737777/product-landing-page.png",
+            alt: "Product Landing Page of Dog Shoes"
+          }
         },
         {
           name: "Survey Form",
           url: "https://codepen.io/iamlexieonearth/full/OEqZWJ",
-          image:
-            "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563170893/survey_form.png"
+          image: {
+            imageURL:
+              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563170893/survey_form.png",
+            alt: "Survey Form for Pizza delivery"
+          }
         },
         {
           name: "Coffee Shop Page Layout",
           url: "https://codepen.io/iamlexieonearth/full/QxQbXX",
-          image:
-            "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563171098/coffee-shop.png"
+          image: {
+            imageURL:
+              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563171098/coffee-shop.png",
+            alt: "Coffee Shop Page Layout with cosy vibe"
+          }
         },
         {
           name: "Tribute Page",
           url: "https://codepen.io/iamlexieonearth/full/jGBRRE",
-          image:
-            "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563171331/Tribute_Page_for_Free_Code_Camp_CSS_Grid_Layout.png"
+          image: {
+            imageURL:
+              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563171331/Tribute_Page_for_Free_Code_Camp_CSS_Grid_Layout.png",
+            alt: "Tribute Page of Dr. B R  Ambedkar"
+          }
         }
       ]
     };
@@ -133,14 +162,12 @@ img {
 }
 
 @media (max-width: 760px) {
-  
   h1 {
     font-size: 22px;
   }
 }
 
 @media (max-width: 490px) {
- 
   .title {
     text-align: center;
   }
