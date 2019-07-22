@@ -21,8 +21,8 @@ export default {
 
 <style scoped lang="scss">
 .about-details {
-  grid-column: 2 / 5;
-  grid-row: 2 / 4;  
+  grid-column: 2 / 4;
+  grid-row: 2 / 5;  
  
 }
 
@@ -33,9 +33,10 @@ export default {
 // CSS for Mobile View
 @media (max-width: 760px) {
   .about-details {
-  grid-column: 2 / 5;
+  grid-column: 1 / 5;
   grid-row: 2 / 5;  
- 
+ justify-self: center;
+ align-self: center;
 }
 }
 </style>

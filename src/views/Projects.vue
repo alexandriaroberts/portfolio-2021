@@ -20,8 +20,8 @@ export default {
 <style scoped lang="scss">
 .project-details {   
   grid-column: 2 / 4;
-  grid-row: 1 / 5;
-  padding-top: 5rem;
+  grid-row: 2 / 5;
+
 
   }
 

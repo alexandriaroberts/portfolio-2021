@@ -10,12 +10,7 @@
         class="projectImage"
         role="projectItem"
       >
-        <img
-          :src="project.image.imageURL"
-          :alt="project.image.alt"
-          :title="project.name"
-          v-on:click="select(project.url)"
-        />
+        <img :src="project.image.imageURL" :alt="project.image.alt" :title="project.name" />
         <p class="project-title">{{ project.name }}</p>
       </div>
     </div>
@@ -24,6 +19,8 @@
 
 <script>
 import main from "../assets/css/main.scss";
+import { TweenMax, Power2, TimelineMax } from "gsap/TweenMax";
+
 export default {
   data() {
     return {
@@ -34,7 +31,8 @@ export default {
           image: {
             imageURL:
               "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563170890/Flower_Game_in_VueJS.png",
-            alt: "Flower VueJs Game, player clicks on the flower and get points for clickig on them"
+            alt:
+              "Flower VueJs Game, player clicks on the flower and get points for clickig on them"
           }
         },
         {
@@ -43,7 +41,8 @@ export default {
           image: {
             imageURL:
               "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563170891/Space_Game_with_Canvas.png",
-            alt: "Space Game with Canvas, player plays with key board and catches an alien"
+            alt:
+              "Space Game with Canvas, player plays with key board and catches an alien"
           }
         },
         {
@@ -108,16 +107,19 @@ export default {
       window.location.href = projectUrl;
       console.log(projectUrl);
     }
+    // animateBox() {
+    //   TweenMax.to(
+    //     ".grid_item",
+    //     1.5,
+    //     { scale: 0.95, ease: Power2.easeOut, yoyo: true },
+    //     0.1
+    //   );
+    // }
   }
 };
 </script>
 
 <style scoped lang="scss">
-.title {
-  align-self: start;
-  grid-column: 1;
-  grid-row: 1;
-}
 .project__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -125,6 +127,7 @@ export default {
   grid-auto-flow: dense;
   grid-gap: 3em;
   justify-self: center;
+  padding: 2.5em 3em 0 3em;
 }
 
 img {
@@ -148,7 +151,7 @@ img {
 
 .projectImage:hover {
   transform: scaleY(1.05);
-  transition: 0.5 linear;
+  transition: 10 ease-out;
   box-shadow: 0 1px 2px rgb(196, 23, 23), 0 8px 0px rgb(196, 23, 23);
 }
 

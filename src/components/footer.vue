@@ -49,7 +49,7 @@ footer {
   grid-column: 2 / 4;
   grid-row: 5;
   z-index: 1;
-  /* padding-top: 1em; */
+  padding-top: 2em;
 }
 .about-content__networks {
   position: relative;

@@ -114,7 +114,8 @@ export default {
 #name span {
   font-size: 3.5vw;
   font-weight: 900;
-  font-family: 'Playfair Display', serif;
+  // font-family: 'Playfair Display', serif;
+  font-family: 'Domine', serif;
   color: var( --text-color-decoration);
   transform: rotate(0.12deg);
   word-spacing: .5em;
