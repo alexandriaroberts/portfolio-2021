@@ -50,7 +50,7 @@ export default {
           url: "https://codepen.io/iamlexieonearth/full/vwPRPY",
           image: {
             imageURL:
-              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563188270/NasaAPI.png",
+              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563856744/Nasa-API.png",
             alt: "Nasa API VueJS Project to render images from NaSa"
           }
         },

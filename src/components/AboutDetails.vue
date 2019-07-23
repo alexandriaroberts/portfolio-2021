@@ -13,15 +13,16 @@
         <span class="about__text-decoration">self-taught developer.</span>
         <br />
         <br />I did take a
-        <span class="about__text-decoration">Computer Science Degree</span> years ago which to be honest I don't think was that useful, but the great thing is I was awarded a full scholarship 
-        from 10,000 applicants to study masters degree in International Managemnet at University Of Sussex because of it.😊✨ 
+        <span class="about__text-decoration">Computer Science Degree</span> years ago which to be honest I don't think was that useful, but the great thing is I was awarded a full scholarship
+        from 10,000 applicants to study masters degree in International Managemnet at University Of Sussex because of it.😊✨
       </p>
 
       <p class="content paragraph__2">
-        For few years, I found myself doing variety of jobs from waitressing, personal assistant, club promoter to administrator for a financial company. Almost all jobs I did I feel like
-         were important for me to grow as a person and I enjoyed them very well. <br /><br> <br> 
-       
-          But since last couple of years I found myself doing some deep thinking & realised how much I
+        For few years, I found myself doing a variety of jobs from waitressing, personal assistant, club promoter to administrator for a financial company. Almost all jobs I did I feel like
+        were important for me to grow as a person and I enjoyed them very well.
+        <br />
+        <br />
+        <br />But since last couple of years I found myself doing some deep thinking & realised how much I
         <span
           class="about__text-decoration"
         >loved</span> using my brain and coding while at uni, also loved mathematics in school, working on a problem and finding solutions to it. Since then I started learning to code again while doing part-time jobs.
@@ -30,7 +31,8 @@
           class="about__text-decoration"
         >volunteer developer</span> at
         <a href="shelovesdata.com" class="link-job">she loves data</a> to gain experinece & help with their website.
-        <br /><br />
+        <br />
+        <br />
         <br />So far I have done few projects including this portfolio, a game in
         <span
           class="about__text-decoration"
@@ -43,7 +45,8 @@
           class="about__text-decoration"
         >Github</span> or
         <span class="about__text-decoration">Codepen</span>.
-        <br /><br />
+        <br />
+        <br />
         <br />Currently, I am looking for a front-end position with a supportive team where I can expand my skills and grow as
         a developer, my interest lies in
         <span
@@ -52,10 +55,9 @@
         <span class="about__text-decoration">SVG</span> and
         <span class="about__text-decoration">VueJS</span>. I also love working with
         <span class="about__text-decoration">CSS Grid</span>.
-        <br/>
-        <br/>
-        <br/>
-        In my leisure time, I love visiting nature🌳, going for long swims and cooking.🤤🥣🥗
+        <br />
+        <br />
+        <br />In my leisure time, I love visiting nature🌳, going for long swims and cooking.🤤🥣🥗
       </p>
       <p
         class="content paragraph__3"
@@ -76,7 +78,7 @@ export default {};
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.5fr 1fr;
-  padding:0 3em;
+  padding: 0 3em;
 }
 
 .profile-picture {
@@ -117,9 +119,7 @@ img {
 }
 
 .about__text-decoration {
-  /* color: var(--text-color); */
   color: var(--text-color-decoration);
-  font-style: italic;
 }
 
 .link-job {
@@ -141,7 +141,7 @@ img {
     align-self: center;
   }
 
-  .title{
+  .title {
     justify-self: center;
   }
 
@@ -176,7 +176,7 @@ img {
     padding-top: 3em;
   }
 
-    .title {
+  .title {
     text-align: center;
   }
 }

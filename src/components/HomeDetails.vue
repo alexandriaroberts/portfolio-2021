@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <!-- HomeDetails Child Component for Home Page -->
-     <h2>Hello, <i>I'm</i></h2>
+     <h2>Hello, I'm</h2>
     <!-- HTML for Split Texting name-->
     <div role="name">
     <h1 id="name">
@@ -27,7 +27,7 @@
     </div>
     <p>
       I’m looking for a full time position as a
-      <span class="job_name"> junior front-end developer</span> anywhere in the world or remote.
+      <span class="job_name"> junior front-end developer</span>. Based in Bali, willing to relocate or work remotely.
       <!-- <h3 class="job_name">Front-End Developer</h3> -->
     </p>
     <ul role="list">
@@ -114,7 +114,6 @@ export default {
 #name span {
   font-size: 3.5vw;
   font-weight: 900;
-  // font-family: 'Playfair Display', serif;
   font-family: 'Domine', serif;
   color: var( --text-color-decoration);
   transform: rotate(0.12deg);
@@ -123,7 +122,6 @@ export default {
 
 .job_name {
   color: var(--text-color-decoration);
-  font-style: italic; 
 }
 
 li {
