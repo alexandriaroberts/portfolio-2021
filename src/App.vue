@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import Header from "../src/components/Header";
-import Footer from "../src/components/Footer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 // import Icons from "./components/animatedicons/Icons";
 import main from "./assets/css/main.scss";
 
