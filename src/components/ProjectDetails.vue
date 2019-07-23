@@ -10,7 +10,7 @@
         class="projectImage"
         role="projectItem"
       >
-        <img :src="project.image.imageURL" :alt="project.image.alt" :title="project.name" />
+        <img :src="project.image.imageURL" v-on:click="select(project.url)" :alt="project.image.alt" :title="project.name" />
         <p class="project-title">{{ project.name }}</p>
       </div>
     </div>
