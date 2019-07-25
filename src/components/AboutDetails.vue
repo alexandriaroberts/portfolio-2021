@@ -9,20 +9,18 @@
         alt="Profile Picture"
       />
       <p class="content paragraph__1">
-        I am Lexie and I am a
-        <span class="about__text-decoration">self-taught developer.</span>
+        I am Lexie!😃
         <br />
-        <br />I did take a
-        <span class="about__text-decoration">Computer Science Degree</span> years ago which to be honest I don't think was that useful, but the great thing is I was awarded a full scholarship
-        from 10,000 applicants to study masters degree in International Managemnet at University Of Sussex because of it.😊✨
+        <br />I have a
+        <span class="about__text-decoration">Computer Science Degree</span> 
+        & masters degree in International Managemnet at University Of Sussex.😊✨
       </p>
 
       <p class="content paragraph__2">
-        For few years, I found myself doing a variety of jobs from waitressing, personal assistant, club promoter to administrator for a financial company. Almost all jobs I did I feel like
-        were important for me to grow as a person and I enjoyed them very well.
+        For few years, I found myself doing a variety of jobs from waitressing, personal assistant, club promoter to administrator for a financial company. Almost all jobs I did were important for me to grow as a person and I enjoyed them very well.
         <br />
         <br />
-        <br />But since last couple of years I found myself doing some deep thinking & realised how much I
+        <br />But since last year I realised how much I
         <span
           class="about__text-decoration"
         >loved</span> using my brain and coding while at uni, also loved mathematics in school, working on a problem and finding solutions to it. Since then I started learning to code again while doing part-time jobs.
@@ -53,15 +51,15 @@
           class="about__text-decoration"
         >JavaScript</span>,
         <span class="about__text-decoration">SVG</span> and
-        <span class="about__text-decoration">VueJS</span>. I also love working with
-        <span class="about__text-decoration">CSS Grid</span>.
+        <span class="about__text-decoration">VueJS</span>. I love everything
+        <span class="about__text-decoration">Front-End</span>.
         <br />
         <br />
         <br />In my leisure time, I love visiting nature🌳, going for long swims and cooking.🤤🥣🥗
       </p>
       <p
         class="content paragraph__3"
-      >If you are intrested in working with me, please feel free to message me. I would love to hear from you, I need a job!😃 I love talking about code or if you need some encouragement in your coding journey, would love to talk about it or help you in your journey to be a developer too.😊</p>
+      >If you are intrested in working with me, please feel free to message me. I would love to hear from you, I need a job!😃 I love talking about code or if you need some encouragement especially if you are a woman in your coding journey, would love to talk about it or help you in your journey to be a developer too.😊</p>
     </div>
   </div>
 </template>
@@ -126,7 +124,7 @@ img {
   color: var(--text-color-secondary);
   /* font-style: italic; */
   font-size: 1.1rem;
-  text-decoration: none;
+ 
   text-transform: uppercase;
 }
 

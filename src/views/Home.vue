@@ -25,7 +25,7 @@ export default {
 .home {
   grid-column: 2 / 4;
   grid-row: 2 / 5;
-  padding-top: 2.5rem;
+ 
 }
 
 .MorphingArea {

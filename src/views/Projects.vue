@@ -36,7 +36,7 @@ export default {
 .project-details {   
   grid-column: 1 / 5;
   grid-row: 1 / 5;
-  padding-top: 5rem; 
+  // padding-top: 5rem; 
  justify-self: center;
   }
 }

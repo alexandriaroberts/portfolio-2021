@@ -121,13 +121,15 @@ export default {
 
 <style scoped lang="scss">
 .project__grid {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: auto;
   grid-auto-flow: dense;
   grid-gap: 3em;
   justify-self: center;
-  padding: 2.5em 3em 0 3em;
+  align-self: center;
+  padding: 3em 3em 0 3em;
 }
 
 img {
@@ -167,6 +169,10 @@ img {
 @media (max-width: 760px) {
   h1 {
     font-size: 22px;
+  }
+
+  .title {
+    text-align: center;
   }
 }
 

@@ -1,7 +1,7 @@
 <template>
-  <div class="hello">
+  <div class="home">
     <!-- HomeDetails Child Component for Home Page -->
-     <h2>Hello, I'm</h2>
+     <p><strong>Hello</strong>, I'm</p>
     <!-- HTML for Split Texting name-->
     <div role="name">
     <h1 id="name">
