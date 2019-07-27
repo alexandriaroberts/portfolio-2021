@@ -49,7 +49,8 @@ footer {
   grid-column: 2 / 4;
   grid-row: 5;
   z-index: 1;
-  padding: 2em 0 0 0;
+  padding: 2em 3em 0 3em;
+ 
 }
 .about-content__networks {
   position: relative;
@@ -57,6 +58,7 @@ footer {
   grid-auto-flow: column;
   padding-top: 1.5em;
   text-transform: uppercase;
+   
 }
 
 a {

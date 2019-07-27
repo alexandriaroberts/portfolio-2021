@@ -126,7 +126,7 @@ export default {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-auto-rows: auto;
   grid-auto-flow: dense;
-  grid-gap: 2em;
+  grid-gap: 5em;
   justify-self: center;
   align-self: center;
   padding: 3em 3em 3em 3em;

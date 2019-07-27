@@ -23,12 +23,11 @@ export default {
 .about-details {
   grid-column: 2 / 4;
   grid-row: 2 / 5;  
- 
-}
+ }
 
 
 // CSS for Mobile View
-@media (max-width: 760px) {
+@media (max-width: 960px) {
   .about-details {
   grid-column: 1 / 5;
   grid-row: 2 / 5;  
@@ -36,4 +35,5 @@ export default {
  align-self: center;
 }
 }
+
 </style>

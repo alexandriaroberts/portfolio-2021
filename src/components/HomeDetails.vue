@@ -113,7 +113,7 @@ export default {
 <style scoped lang="scss">
 .home {
   max-width: 35em;
-
+  padding: 0 3em;
 }
 #name span {
   font-size: 3.5vw;

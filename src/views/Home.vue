@@ -26,14 +26,12 @@ export default {
   grid-column: 2 / 4;
   grid-row: 2 / 5;
   padding-top: 1em;
- 
 }
-
 
 @media (max-width: 760px) {
   .home {
-  padding-top: 1.5rem;
-}
-
+    grid-column: 1 / 5;
+    padding-top: 1.5rem;
+  }
 }
 </style>
