@@ -121,12 +121,25 @@ img {
 }
 
 
-@media (max-width: 760px) {
+@media (max-width: 930px) {
   .profile-picture {
     grid-column: 1 / 2;
     grid-row: 1;
-    align-self: center;
+    align-self: start;
   }
+
+  .paragraph__2 {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  align-self: center;
+}
+
+.paragraph__3 {
+  grid-column: 1 / 3;
+  grid-row: 3;
+  align-self: end;
+}
+
 
   .title {
     justify-self: center;
