@@ -26,10 +26,7 @@ export default {
  
 }
 
-.MorphingArea {
- position: relative;
- top: -900px;
-}
+
 // CSS for Mobile View
 @media (max-width: 760px) {
   .about-details {

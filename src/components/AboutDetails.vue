@@ -9,57 +9,45 @@
         alt="Profile Picture"
       />
       <p class="content paragraph__1">
-        I am Lexie!😃
+        My name is <span class="about__text-decoration">Lexie</span> and I am a <span class="about__text-decoration">self-taught Front-end developer</span>.
         <br />
-        <br />I have a
-        <span class="about__text-decoration">Computer Science Degree</span> 
-        & masters degree in International Managemnet at University Of Sussex.😊✨
+        <br />Since completing my <span class="about__text-decoration">Computer Science Engg. degree</span> at Amaravati University in India.
+         I have been on a bit of a journey. At the time I wasn’t really sure if Computer
+         science was for me but from it I got the opportunity to study for my masters 
+         degree in <span class="about__text-decoration">International Management </span> at the  <span class="about__text-decoration">University of Sussex</span> on a full <span class="about__text-decoration">scholarship</span>.
       </p>
 
       <p class="content paragraph__2">
-        For few years, I found myself doing a variety of jobs from waitressing, personal assistant, club promoter to administrator for a financial company. Almost all jobs I did were important for me to grow as a person and I enjoyed them very well.
+        Since then I have been working in a variety of jobs from waitressing, 
+        to working as a  personal assistant, a club promoter and an administrator
+        for a financial company. In every job I learned and grew as a person 
+        and professional, and I really enjoyed every one of them but I felt there
+        was something missing and in the last couple of years I have been thinking
+        more and more about coding, computer science, and how I<span class="about__text-decoration"> loved mathematics</span>
+        and<span class="about__text-decoration"> finding solutions to complex problems</span>.
         <br />
         <br />
-        <br />But since last year I realised how much I
-        <span
-          class="about__text-decoration"
-        >loved</span> using my brain and coding while at uni, also loved mathematics in school, working on a problem and finding solutions to it. Since then I started learning to code again while doing part-time jobs.
-        I also started to work as a
-        <span
-          class="about__text-decoration"
-        >volunteer developer</span> at
-        <a href="shelovesdata.com" class="link-job">she loves data</a> to gain experinece & help with their website.
+        <br />I started coding again while working part-time in a variety of jobs.
+        In this time I have been mainly focussing on  <span class="about__text-decoration">Javascript</span> and  <span class="about__text-decoration">VueJs</span> but
+        I also love working with <span class="about__text-decoration">CSS</span> (particularly  <span class="about__text-decoration">CSS Grid</span>). I have completed 
+        a number of personal projects, which you can see on my <span class="about__text-decoration">Github</span> and  <span class="about__text-decoration">Codepen</span>, 
+        and volunteered my time and expertise at  <a href="shelovesdata.com" class="link-job">SHE LOVES DATA </a>to gain experience
+        & help with them with their website.
         <br />
         <br />
-        <br />So far I have done few projects including this portfolio, a game in
-        <span
-          class="about__text-decoration"
-        >VueJS</span> &
-        few projects on CSS Grid. I also have found myself loving
-        <span
-          class="about__text-decoration"
-        >JavaScript</span> despite finding it challenging at times. You can see all my code on
-        <span
-          class="about__text-decoration"
-        >Github</span> or
-        <span class="about__text-decoration">Codepen</span>.
+        <br />So now I have come full circle and I am looking for a new role as a<span class="about__text-decoration"> Frontend Developer</span> in a supportive team where I can utilise my skills and grow as a developer.
+           
         <br />
         <br />
-        <br />Currently, I am looking for a front-end position with a supportive team where I can expand my skills and grow as
-        a developer, my interest lies in
-        <span
-          class="about__text-decoration"
-        >JavaScript</span>,
-        <span class="about__text-decoration">SVG</span> and
-        <span class="about__text-decoration">VueJS</span>. I love everything
-        <span class="about__text-decoration">Front-End</span>.
+        <br />In my spare time I love visiting nature, going for long swims, and cooking.
+  
         <br />
         <br />
-        <br />In my leisure time, I love visiting nature🌳, going for long swims and cooking.🤤🥣🥗
+        <br />If you would like to find out more about me, my skills and how I can fit into your team please feel free to message me. I love talking about code, so even if you aren’t looking for a new team member right now, I would love to connect with you so I can share my interests and passions with other like minded people.
       </p>
       <p
         class="content paragraph__3"
-      >If you are intrested in working with me, please feel free to message me. I would love to hear from you, I need a job!😃 I love talking about code or if you need some encouragement especially if you are a woman in your coding journey, would love to talk about it or help you in your journey to be a developer too.😊</p>
+      >P.S. And if you are reading this and thinking about starting your own coding journey, please reach out. I would love to chat, offer encouragement and <span class="about__text-decoration">help</span> in any way I can.</p>
     </div>
   </div>
 </template>
@@ -141,6 +129,10 @@ img {
 
   .title {
     justify-self: center;
+  }
+
+   h1 {
+    font-size: 22px;
   }
 
   img {

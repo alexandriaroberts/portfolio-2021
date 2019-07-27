@@ -179,6 +179,7 @@ img {
 @media (max-width: 490px) {
   .title {
     text-align: center;
+    padding-top: 3em;
   }
 }
 </style>

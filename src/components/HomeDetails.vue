@@ -101,9 +101,9 @@ export default {
 
     TweenMax.staggerFrom(
       letters,
-      1.5,
+      0.7,
       { opacity: 0, y: 150, ease: Back.easeOut },
-      0.15
+      0.1
     );
   }
 };
