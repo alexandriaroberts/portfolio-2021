@@ -111,6 +111,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+.home {
+  max-width: 35em;
+
+}
 #name span {
   font-size: 3.5vw;
   font-weight: 900;

@@ -123,18 +123,18 @@ export default {
 .project__grid {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-auto-rows: auto;
   grid-auto-flow: dense;
-  grid-gap: 3em;
+  grid-gap: 2em;
   justify-self: center;
   align-self: center;
-  padding: 3em 3em 0 3em;
+  padding: 3em 3em 3em 3em;
 }
 
 img {
   width: 100%;
-  height: 300px;
+  height: 250px;
   object-fit: cover;
   // border-radius: 2%;
   position: relative;

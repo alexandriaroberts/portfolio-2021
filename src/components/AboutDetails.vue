@@ -120,6 +120,7 @@ img {
   text-decoration: underline;
 }
 
+
 @media (max-width: 760px) {
   .profile-picture {
     grid-column: 1 / 2;

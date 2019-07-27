@@ -49,7 +49,7 @@ footer {
   grid-column: 2 / 4;
   grid-row: 5;
   z-index: 1;
-  padding-top: 2em;
+  padding: 2em 0 0 0;
 }
 .about-content__networks {
   position: relative;
@@ -60,7 +60,7 @@ footer {
 }
 
 a {
-  color: var( --text-color-secondary);
+  color: var(--text-color-secondary);
   font-weight: bold;
   text-decoration: none;
   padding-left: 6px;

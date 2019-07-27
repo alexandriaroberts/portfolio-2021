@@ -25,18 +25,14 @@ export default {
 .home {
   grid-column: 2 / 4;
   grid-row: 2 / 5;
+  padding-top: 1em;
  
 }
 
-.MorphingArea {
-  position: absolute;
-  top: 0;
-  right: 153px;
-}
 
 @media (max-width: 760px) {
   .home {
-  padding-top: 4.5rem;
+  padding-top: 1.5rem;
 }
 
 }
