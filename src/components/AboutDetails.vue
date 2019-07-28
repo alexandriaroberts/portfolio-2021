@@ -56,7 +56,7 @@
         <br />
         <br />
         <br />
-In my spare time I love visiting nature, going for long swims, and cooking.
+In my spare time, I love visiting nature, going for long swims, and cooking.
         <br />
         <br />
         <br />If you would like to find out more about me, my skills and how I can fit into your team please feel free to message me. I love talking about code, so even if you aren’t looking for a new team member right now, I would love to connect with you so I can share my interests and passions with other like minded people.
