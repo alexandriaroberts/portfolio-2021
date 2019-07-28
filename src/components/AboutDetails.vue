@@ -11,11 +11,11 @@
       <p class="content paragraph__1">
         My name is
         <span class="about__text-decoration">Lexie</span> and I am a
-        <span class="about__text-decoration">self-taught Front-end developer</span>.
+        <span class="about__text-decoration">Front-end developer</span>.
         <br />
         <br />Since completing my
         <span class="about__text-decoration">Computer Science Engg. degree</span> at Amaravati University in India.
-        I have been on a bit of a journey. At the time I wasn’t really sure if Computer
+        I have been on a bit of a journey, at the time I wasn’t really sure if Computer
         science was for me but from it I got the opportunity to study for my masters
         degree in
         <span class="about__text-decoration">International Management</span> at the
@@ -26,8 +26,8 @@
       <p class="content paragraph__2">
         Since then I have been working in a variety of jobs from waitressing,
         to working as a personal assistant, a club promoter and an administrator
-        for a financial company. In every job I learned and grew as a person
-        and professional, and I really enjoyed every one of them but I felt there
+        for a financial company. In every job, I learned and grew as a person
+        and professional, and I really enjoyed every one of them, but I felt there
         was something missing and in the last couple of years I have been thinking
         more and more about coding, computer science, and how I
         <span class="about__text-decoration">loved mathematics</span>
@@ -35,8 +35,8 @@
         <span class="about__text-decoration">finding solutions to complex problems</span>.
         <br />
         <br />
-        <br />I started coding again while working part-time in a variety of jobs.
-        In this time I have been mainly focussing on
+        <br />I started teaching myself to code again while working part-time in a variety of jobs.
+        In this time, I have been mainly focussing on
         <span class="about__text-decoration">Javascript</span> and
         <span class="about__text-decoration">VueJs</span> but
         I also love working with
@@ -62,7 +62,7 @@ In my spare time I love visiting nature, going for long swims, and cooking.
         <br />If you would like to find out more about me, my skills and how I can fit into your team please feel free to message me. I love talking about code, so even if you aren’t looking for a new team member right now, I would love to connect with you so I can share my interests and passions with other like minded people.
       </p>
       <p class="content paragraph__3">
-        P.S. And if you are reading this and thinking about starting your own coding journey, please reach out. I would love to chat, offer encouragement and
+        <span class="about__text-decoration">P.S.</span> And if you are reading this and thinking about starting your own coding journey, please reach out. I would love to chat, offer encouragement and
         <span class="about__text-decoration">help</span> in any way I can.
       </p>
     </div>
