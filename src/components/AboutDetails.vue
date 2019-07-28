@@ -129,7 +129,6 @@ img {
   color: var(--text-color-secondary);
   /* font-style: italic; */
   font-size: 1.1rem;
-
   text-transform: uppercase;
 }
 
