@@ -55,6 +55,11 @@ html {
   color: var(--text-color);
 }
 
+.router-link-exact-active {
+  color: var(--text-color);
+
+}
+
 h1{
   // font-family: 'Playfair Display', serif;
   font-family: 'Domine', serif;

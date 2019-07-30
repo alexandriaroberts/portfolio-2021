@@ -10,8 +10,15 @@
         class="projectImage"
         role="projectItem"
       >
-        <img :src="project.image.imageURL" v-on:click="select(project.url)" :alt="project.image.alt" :title="project.name" />
         <p class="project-title">{{ project.name }}</p>
+
+        <img
+          :src="project.image.imageURL"
+          v-on:click="select(project.url)"
+          :target="project.image.target"
+          :alt="project.image.alt"
+          :title="project.name"
+        />
       </div>
     </div>
   </div>
@@ -32,7 +39,7 @@ export default {
             imageURL:
               "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563170890/Flower_Game_in_VueJS.png",
             alt:
-              "Flower VueJs Game, player clicks on the flower and get points for clickig on them"
+              "Flower VueJs Game, player clicks on the flower and get points for clickig on them",
           }
         },
         {
@@ -141,7 +148,7 @@ img {
 }
 
 .projectImage {
-  background: rgb(196, 23, 23);
+  // border: solid 1px red;
   cursor: pointer;
   // border-radius: 2%;
   display: block;
@@ -151,19 +158,14 @@ img {
   background-position: 50% 50%;
 }
 
-.projectImage:hover {
-  transform: scaleY(1.05);
-  transition: 10 ease-out;
-  box-shadow: 0 1px 2px rgb(196, 23, 23), 0 8px 0px rgb(196, 23, 23);
-}
+// .projectImage:hover {
+//   transform: scaleY(1.05);
+//   transition: 10 ease-out;
+//   box-shadow: 0 1px 2px rgb(196, 23, 23), 0 8px 0px rgb(196, 23, 23);
+// }
 
 .project-title {
   text-align: center;
-  // line-height: 1.5;
-  font-weight: 600;
-  color: var(--main-bg-color);
-  text-decoration: none;
-  letter-spacing: 0.1em;
 }
 
 @media (max-width: 760px) {

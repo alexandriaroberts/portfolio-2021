@@ -50,6 +50,7 @@ footer {
   grid-row: 5;
   z-index: 1;
   padding: 2em 3em 0 3em;
+  
  
 }
 .about-content__networks {
@@ -79,16 +80,20 @@ about-content__github__link:hover {
 @media (max-width: 960px) {
   footer {
     grid-column: 2 / 4;
+    text-align: center;
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 660px) {
   footer {
     grid-column: 2 / 4;
+    padding:0;
+    text-align: center;
   }
   .about-content__networks {
     grid-auto-flow: row;
     justify-content: center;
+    align-self: center;
   }
 }
 </style>
