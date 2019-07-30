@@ -11,14 +11,13 @@
         role="projectItem"
       >
         <p class="project-title">{{ project.name }}</p>
-
+        <a :href="project.url" target="_blank">
         <img
-          :src="project.image.imageURL"
-          v-on:click="select(project.url)"
-          :target="project.image.target"
+          :src="project.image.imageURL"         
           :alt="project.image.alt"
           :title="project.name"
         />
+        </a>
       </div>
     </div>
   </div>
