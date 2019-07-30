@@ -46,7 +46,7 @@
         <span class="about__text-decoration">Github</span> and
         <span class="about__text-decoration">Codepen</span>,
         and volunteered my time and expertise at
-        <a href="https://shelovesdata.com/" target="_blank" class="link-job">SHE LOVES DATA</a>to gain experience
+        <a href="https://shelovesdata.com/" target="_blank" class="link-job">SHE LOVES DATA</a> to gain experience
         & help with them with their website.
         <br />
         <br />

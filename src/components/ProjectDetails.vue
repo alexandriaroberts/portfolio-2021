@@ -39,7 +39,7 @@ export default {
             imageURL:
               "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563170890/Flower_Game_in_VueJS.png",
             alt:
-              "Flower VueJs Game, player clicks on the flower and get points for clickig on them",
+              "Flower VueJs Game, player clicks on the flower and get points for clickig on them"
           }
         },
         {
