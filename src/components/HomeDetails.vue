@@ -148,4 +148,11 @@ li {
   font-size: 22px;
   }
 }
+
+
+@media (max-width: 460px) {
+   #name span { 
+  font-size: 15px;
+  }
+}
 </style>

@@ -7,17 +7,19 @@
         v-for="(project, index) in projects"
         :key="index"
         ref="projectImage"
-        class="projectImage"
         role="projectItem"
+        class="projectImage"
       >
-        <p class="project-title">{{ project.name }}</p>
+        <!-- <p class="project-title">{{ project.name }}</p> -->
         <a :href="project.url" target="_blank">
         <img
           :src="project.image.imageURL"         
           :alt="project.image.alt"
           :title="project.name"
+          class="projectImage"
         />
         </a>
+          <p class="project-title">{{ project.name }}</p>
       </div>
     </div>
   </div>
@@ -147,7 +149,7 @@ img {
 }
 
 .projectImage {
-  // border: solid 1px red;
+  background:  rgb(196, 23, 23);
   cursor: pointer;
   // border-radius: 2%;
   display: block;
@@ -157,14 +159,16 @@ img {
   background-position: 50% 50%;
 }
 
-// .projectImage:hover {
-//   transform: scaleY(1.05);
-//   transition: 10 ease-out;
-//   box-shadow: 0 1px 2px rgb(196, 23, 23), 0 8px 0px rgb(196, 23, 23);
-// }
+.projectImage:hover {
+  transform: scaleY(1.05);
+  transition: 10 ease-out;
+  box-shadow: 0 1px 2px rgb(196, 23, 23), 0 8px 0px rgb(196, 23, 23);
+}
 
 .project-title {
   text-align: center;
+  background:  rgb(196, 23, 23);
+  color: #fff;
 }
 
 @media (max-width: 760px) {

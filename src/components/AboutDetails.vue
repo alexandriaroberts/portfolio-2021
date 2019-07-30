@@ -75,7 +75,7 @@ import main from "../assets/css/main.scss";
 export default {};
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .about {
   position: relative;
   display: grid;
