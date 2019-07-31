@@ -3,7 +3,7 @@
     <!-- HomeDetails Child Component for Home Page -->
      <p><strong>Hello</strong>, I'm</p>
     <!-- HTML for Split Texting name-->
-    <div role="name">
+    <div>
     <h1 id="name">
       <span class="color-1">A</span>
       <span class="color-2">l</span>
