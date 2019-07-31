@@ -1,13 +1,11 @@
 <template>
   <div class="project-details">
     <ProjectDetails class="ProjectDetails" />
-    <!-- <MorphingArea class="MorphingArea" /> -->
   </div>
 </template>
 
 <script>
 import ProjectDetails from "../components/ProjectDetails";
-// import MorphingArea from "@/components/MorphingArea.vue";
 import main from "../assets/css/main.scss";
 export default {
   name: "projects",

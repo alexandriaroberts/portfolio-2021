@@ -1,22 +1,16 @@
 <template>
   <div class="home">
     <HomeDetails class="homeDetails" />
-    <!-- <MorphingArea class="MorphingArea" />  -->
-    <!-- <ButterFly/> -->
   </div>
 </template>
 
 <script>
 import HomeDetails from "@/components/HomeDetails.vue";
-import MorphingArea from "../components/MorphingArea";
-import ButterFly from "@/components/ButterFly.vue";
 import main from "../assets/css/main.scss";
 export default {
   name: "home",
   components: {
-    HomeDetails,
-    MorphingArea,
-    ButterFly
+    HomeDetails
   }
 };
 </script>
