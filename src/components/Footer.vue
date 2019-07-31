@@ -8,6 +8,7 @@
           <a
             href="https://twitter.com/iamlexieonearth"
             target="_blank"
+            rel="noopener"
             class="about-content__network__link"
           >twitter</a>
         </div>
@@ -15,6 +16,7 @@
           <a
             href="https://github.com/alexandriaroberts"
             target="_blank"
+            rel="noopener"
             class="about-content__github__link"
           >Github</a>
         </div>
@@ -22,6 +24,7 @@
           <a
             href="https://codepen.io/iamlexieonearth"
             target="_blank"
+            rel="noopener"
             class="about-content__network__link"
           >Codepen</a>
         </div>
@@ -29,6 +32,7 @@
           <a
             href="https://www.linkedin.com/in/alexandria-roberts-57a3b8182/"
             target="_blank"
+            rel="noopener"
             class="about-content__network__link"
           >linkedin</a>
         </div>

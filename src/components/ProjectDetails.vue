@@ -11,7 +11,7 @@
         class="projectImage"
       >
         <!-- <p class="project-title">{{ project.name }}</p> -->
-        <a :href="project.url" target="_blank">
+        <a :href="project.url" target="_blank" rel="noopener">
         <img
           :src="project.image.imageURL"         
           :alt="project.image.alt"
