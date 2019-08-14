@@ -6,7 +6,7 @@
     <div>
     <h1 id="name">
       <span class="color-1">A</span>
-      <span class="color-2">l</span>
+      <span class="color-2">l</span> 
       <span class="color-3">e</span>
       <span class="color-4">x</span>
       <span class="color-1">a</span>
