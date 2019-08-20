@@ -1,39 +1,41 @@
 <template>
   <div class="home">
     <!-- HomeDetails Child Component for Home Page -->
-     <p><strong>Hello</strong>, I'm</p>
+    <p>
+      <strong>Hello</strong>, I'm
+    </p>
     <!-- HTML for Split Texting name-->
     <div>
-    <h1 id="name">
-      <span class="color-1">A</span>
-      <span class="color-2">l</span> 
-      <span class="color-3">e</span>
-      <span class="color-4">x</span>
-      <span class="color-1">a</span>
-      <span class="color-2">n</span>
-      <span class="color-2">d</span>
-      <span class="color-3">r</span>
-      <span class="color-4">i</span>
-      <span class="color-1">a</span>
-      <span class="color-2">&nbsp</span>
-      <span class="color-1">R</span>
-      <span class="color-2">o</span>
-      <span class="color-3">b</span>
-      <span class="color-4">e</span>
-      <span class="color-1">r</span>
-      <span class="color-2">t</span>
-      <span class="color-2">s</span>
-    </h1>
+      <h1 id="name">
+        <span class="color-1">A</span>
+        <span class="color-2">l</span>
+        <span class="color-3">e</span>
+        <span class="color-4">x</span>
+        <span class="color-1">a</span>
+        <span class="color-2">n</span>
+        <span class="color-2">d</span>
+        <span class="color-3">r</span>
+        <span class="color-4">i</span>
+        <span class="color-1">a</span>
+        <span class="color-2">&nbsp</span>
+        <span class="color-1">R</span>
+        <span class="color-2">o</span>
+        <span class="color-3">b</span>
+        <span class="color-4">e</span>
+        <span class="color-1">r</span>
+        <span class="color-2">t</span>
+        <span class="color-2">s</span>
+      </h1>
     </div>
     <p>
       I’m looking for a full time position as a
-      <span class="job_name"> junior front-end developer</span>. Based in Bali, willing to relocate or work remotely.
+      <span class="job_name">junior front-end developer</span>. Based in Bali, willing to relocate or work remotely.
       <!-- <h3 class="job_name">Front-End Developer</h3> -->
     </p>
     <ul role="list">
       <div>
         <li role="listitem">
-          <svg 
+          <svg
             width="15"
             height="15"
             viewBox="0 0 15 15"
@@ -75,7 +77,52 @@
               fill="rgb(196, 23, 23)"
             />
           </svg>
-          HTML/CSS 
+          HTML/CSS
+        </li>
+        <li role="listitem">
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15 7.5C15 11.6421 11.6421 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5Z"
+              fill="rgb(196, 23, 23)"
+            />
+          </svg>
+          SCSS/SASS
+        </li>
+        <li role="listitem">
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15 7.5C15 11.6421 11.6421 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5Z"
+              fill="rgb(196, 23, 23)"
+            />
+          </svg>
+          GSAP
+        </li>
+        <li role="listitem">
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15 7.5C15 11.6421 11.6421 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5Z"
+              fill="rgb(196, 23, 23)"
+            />
+          </svg>
+          Bootstrap
         </li>
       </div>
     </ul>
@@ -89,9 +136,7 @@ import { TimelineLite, TweenMax, Back, Bezier } from "gsap";
 import main from "../assets/css/main.scss";
 export default {
   name: "HelloWorld",
-  components: {
-   
-  },
+  components: {},
   props: {
     msg: String
   },
@@ -118,10 +163,10 @@ export default {
 #name span {
   font-size: 3.5vw;
   font-weight: 900;
-  font-family: 'Domine', serif;
-  color: var( --text-color-decoration);
+  font-family: "Domine", serif;
+  color: var(--text-color-decoration);
   transform: rotate(0.12deg);
-  word-spacing: .5em;
+  word-spacing: 0.5em;
 }
 
 .job_name {
@@ -140,19 +185,18 @@ li {
 }
 
 @media (max-width: 760px) {
-  #name span { 
-  font-size: 20px;
+  #name span {
+    font-size: 20px;
   }
 
   h1 {
-  font-size: 22px;
+    font-size: 22px;
   }
 }
 
-
 @media (max-width: 460px) {
-   #name span { 
-  font-size: 15px;
+  #name span {
+    font-size: 15px;
   }
 }
 </style>
