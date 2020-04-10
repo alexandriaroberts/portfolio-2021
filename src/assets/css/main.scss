@@ -1,105 +1,63 @@
-@import url("https://fonts.googleapis.com/css?family=Overpass+Mono");
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Domine&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-// background: #181818
-// color: #FFF;
-:root {
-  --main-bg-color: rgb(246, 242, 240);
-  --word-spacing: 0.1em;
-  --text-color-decoration: rgb(196, 23, 23);
-  --text-color: #000;
-  --text-color-secondary: rgb(196, 23, 23);
-}
-html {
-  background-color: var(--main-bg-color);
-  width: 100%;
-  height: 100%;
-  color: var(--text-color);
-  word-spacing: var(--word-spacing);
-  font-family: 'Roboto', sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.6;
-  font-smooth: always;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-}
-#app {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-  grid-template-rows: 0.2fr 1fr 1fr 0.3fr;
-  padding: 1em;
-}
+
+@import "../sass/abstracts/functions";
+@import "../sass/abstracts/mixins";
+@import "../sass/abstracts/variables";
+
+@import "../sass/base/animations";
+@import "../sass/base/typography";
+@import "../sass/base/base";
+@import "../sass/base/utilities";
 
 #nav {
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: center;
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	align-items: center;
 }
 
 .nav__list {
-  line-height: 1.5;
-  color: var( --text-color-secondary);
-  text-decoration: none;
-  letter-spacing: 0.1em;
-  padding: 1em;
- }
+	line-height: 1.5;
+	color: $color-primary;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	padding-right: 1em;
+	padding-left: 1em;
+}
 
 .nav__list:hover {
-  color: var(--text-color);
+	color: $color-primary;
 }
 
 .router-link-exact-active {
-  color: var(--text-color);
-
+	color: $color-primary;
 }
 
-h1{
-  // font-family: 'Playfair Display', serif;
-  font-family: 'Domine', serif;
-  line-height: 1.1;
-  font-weight: 900;
-  text-transform: uppercase;
-  font-size: 2rem; 
-  font-size: 3.5vw;
 
-}
-.heading {
-  color: var( --text-color-decoration);
-}
 @media only screen and (min-width: 1904px) {
-  .container {
-    max-width: 1400px;
-  }
+	.container {
+		max-width: 1400px;
+	}
 }
-
-
 
 @media (max-width: 960px) {
-  h1 .heading .title{
-    font-size: 1.1em;
-  }
-html {
-  font-size: 1.2rem; 
-  }  
- }
+	h1 .heading .title {
+		font-size: 1.1em;
+	}
+	html {
+		font-size: 1.2rem;
+	}
+}
 
- @media (max-width: 460px) {
-   #nav {
-    padding-bottom: 0;
-   }
-   h1 .heading {
-    h1 {
-      font-size: 22px;
-      }
-  }
-html {
-  font-size: 1rem; 
-  } 
- }
+@media (max-width: 460px) {
+	#nav {
+		padding-bottom: 0;
+	}
+	h1 .heading {
+		h1 {
+			font-size: 22px;
+		}
+	}
+	html {
+		font-size: 1rem;
+	}
+}

@@ -1,31 +1,35 @@
 <template>
   <div class="home">
-    <HomeDetails class="homeDetails" />
+    <!-- <HomeDetails class="homeDetails" /> -->
+    <Hero />
+     <AboutDetails class="AboutDetails" />
   </div>
 </template>
 
 <script>
-import HomeDetails from "@/components/HomeDetails.vue";
-import main from "../assets/css/main.scss";
+import HomeDetails from '@/components/HomeDetails.vue'
+import Hero from '@/components/Hero.vue'
+import AboutDetails from "@/components/AboutDetails.vue";
+
 export default {
-  name: "home",
+  name: 'home',
   components: {
-    HomeDetails
+    Hero,
+    AboutDetails
   }
-};
+}
 </script>
 
 <style scoped lang="scss">
 .home {
-  grid-column: 2 / 4;
-  grid-row: 2 / 5;
-  padding-top: 1em;
+  grid-row: 2 / -1;
+  grid-column: 1 / -1;
+
+// Home Page Grid Layput
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, min-content);
+  grid-gap: 6.5rem 0;
 }
 
-@media (max-width: 760px) {
-  .home {
-    grid-column: 1 / 5;
-    padding-top: 1.5rem;
-  }
-}
 </style>
