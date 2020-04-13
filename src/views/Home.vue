@@ -1,23 +1,30 @@
 <template>
   <div class="home">
-    <!-- <HomeDetails class="homeDetails" /> -->
     <Hero />
-     <AboutDetails class="AboutDetails" />
+    <AboutDetails class="AboutDetails" />
+    <Skills />
+    <Achievements />
+    <Work />
   </div>
 </template>
 
 <script>
-import HomeDetails from '@/components/HomeDetails.vue'
-import Hero from '@/components/Hero.vue'
+import Hero from "@/components/Hero.vue";
 import AboutDetails from "@/components/AboutDetails.vue";
+import Skills from "@/components/Skills.vue";
+import Achievements from "@/components/Achievements.vue";
+import Work from "@/components/Work.vue";
 
 export default {
-  name: 'home',
+  name: "home",
   components: {
     Hero,
-    AboutDetails
+    AboutDetails,
+    Skills,
+    Achievements,
+    Work
   }
-}
+};
 </script>
 
 <style scoped lang="scss">
@@ -25,11 +32,10 @@ export default {
   grid-row: 2 / -1;
   grid-column: 1 / -1;
 
-// Home Page Grid Layput
+  // Home Page Grid Layput
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, min-content);
-  grid-gap: 6.5rem 0;
+  grid-gap: 13rem 0;
 }
-
 </style>

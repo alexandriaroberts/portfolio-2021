@@ -1,12 +1,20 @@
 @mixin line {
-    &::after {
-        content: "";
-        display: block;
-        border-left: $color-black;
-    }
+    grid-row: 1 / -1;
+    grid-column: 1;
+    position: relative;    
+    border-right: solid 1px $color-primary;
+    z-index: 1; 
+    svg {
+        position: absolute;
+        right: -10px;
+      }     
 }
 
 
+
+@mixin underline {
+    border-bottom: solid 1px $color-primary;
+}
 
 
 // MEDIA QUERY MANAGER

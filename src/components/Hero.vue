@@ -28,10 +28,10 @@
         class="hero__image-picture"
       />
     </div>
-    <div class="hero__line"></div>
-    <h4 class="hero__job">
+    <div class="hero__line">&nbsp;</div>
+    <h2 class="hero__job">
       Front-End Developer
-    </h4>
+    </h2>
   </div>
 </template>
 
