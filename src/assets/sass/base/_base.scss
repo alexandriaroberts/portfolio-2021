@@ -23,6 +23,39 @@ body {
 }
 
 ::selection {
-//     background-color: $color-primary;
-//     color: $color-white;
+    background-color: $color-primary;
+    color: $color-white;
  }
+
+
+ #nav {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	align-items: center;
+}
+
+.nav__list {
+	line-height: 1.5;
+	color: $color-primary;
+    text-decoration: none;
+    text-transform: uppercase;
+	letter-spacing: 0.1em;
+	padding-right: 1em;
+    padding-left: 1em;
+    transition: all 0.2s;
+}
+
+.nav__list:hover {
+    transform: translateY(-3px);
+    color: $color-tertiary-dark;
+    @include text-shadow;    
+}
+
+.router-link-exact-active {
+	color: $color-primary;
+}
+
+
+
+

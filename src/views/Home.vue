@@ -29,7 +29,7 @@ export default {
 
 <style scoped lang="scss">
 .home {
-  grid-row: 2 / -1;
+  grid-row: 2;
   grid-column: 1 / -1;
 
   // Home Page Grid Layput

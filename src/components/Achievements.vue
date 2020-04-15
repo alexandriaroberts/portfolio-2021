@@ -15,10 +15,13 @@
           </svg></div>
           <div class="about-text">
       <p class="paragraph">
-       Won a T-shirt for contributing to open source issue of <a href="https://www.vuevixens.org/" class="link">Vue Vixen</a>.
+        <!-- <img src="../assets/images/wave.svg"> -->
+       Won a T-shirt for contributing to open source issue of &rarr; <a href="https://www.vuevixens.org/" class="link" target="_blank">Vue Vixen</a>.
       </p>
       <p class="paragraph">
-        Proudest moment for me, when my pen, which is done using Nasa API and Vue.JS got featured on codepen, you can see <a href="" class="link">the NASA API project</a> here.
+        Proudest moment for me, when my pen, which is done using Nasa API and Vue.JS got featured on codepen, you can check out &rarr;
+
+        <a href="https://codepen.io/iamlexieonearth/full/vwPRPY" target="_blank" class="link">the project</a> here.
       </p>
     </div>
 
@@ -41,9 +44,7 @@ export default {};
   grid-template-rows: min-content 1fr;
 
   .heading-primary {
-    grid-row: 1;
-    grid-column: 1;
-    justify-self: center;
+    @include mainHeading;
   }
 
   .side__line {

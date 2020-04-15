@@ -53,10 +53,8 @@ export default {};
   grid-template-rows: min-content 1fr;
 
   .heading-primary {
-    grid-row: 1;
-    grid-column: 1;
-    justify-self: center;
-  }
+    @include mainHeading;
+      }
 
   .side__line {
     @include line;
@@ -73,6 +71,12 @@ export default {};
     align-self: center;
     list-style-type: none;
     padding-left: 5rem;
+
+    &-type {
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+	}
+    }
   }
 }
 </style>

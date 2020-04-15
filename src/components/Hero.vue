@@ -23,7 +23,7 @@
     </h1>
     <div class="hero__image">
       <img
-        src="../../src/assets/images/profile-picture.jpg"
+        src="../../src/assets/images/profile-picture-2.jpg"
         alt=""
         class="hero__image-picture"
       />
@@ -73,7 +73,6 @@ export default {
     grid-row: 1;
     grid-column: 1 / 2;
 
-    // font-family: 'Playfair Display', serif;
     font-family: "Lora", serif;
     line-height: 6.7rem;
     font-weight: normal;

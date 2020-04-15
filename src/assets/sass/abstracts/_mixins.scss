@@ -1,21 +1,28 @@
 @mixin line {
-    grid-row: 1 / -1;
-    grid-column: 1;
-    position: relative;    
-    border-right: solid 1px $color-primary;
-    z-index: 1; 
-    svg {
-        position: absolute;
-        right: -10px;
-      }     
+	grid-row: 1 / -1;
+	grid-column: 1;
+	position: relative;
+	border-right: solid 1px $color-primary;
+	z-index: 1;
+	svg {
+		position: absolute;
+		right: -10px;
+	}
 }
 
-
+@mixin text-shadow {
+	text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+@mixin mainHeading {
+	grid-row: 1;
+	grid-column: 1;
+	justify-self: center;
+	padding-right: 5rem;
+}
 
 @mixin underline {
-    border-bottom: solid 1px $color-primary;
+	border-bottom: solid 1px $color-primary;
 }
-
 
 // MEDIA QUERY MANAGER
 /*
@@ -36,17 +43,24 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 @mixin respond($breakpoint) {
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
-    @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content };     //900px
-    }
-    @if $breakpoint == tab-land {
-        @media only screen and (max-width: 75em) { @content };    //1200px
-    }
-    @if $breakpoint == big-desktop {
-        @media only screen and (min-width: 112.5em) { @content };    //1800
-    }
+	@if $breakpoint == phone {
+		@media only screen and (max-width: 37.5em) {
+			@content;
+		} //600px
+	}
+	@if $breakpoint == tab-port {
+		@media only screen and (max-width: 56.25em) {
+			@content;
+		} //900px
+	}
+	@if $breakpoint == tab-land {
+		@media only screen and (max-width: 75em) {
+			@content;
+		} //1200px
+	}
+	@if $breakpoint == big-desktop {
+		@media only screen and (min-width: 112.5em) {
+			@content;
+		} //1800
+	}
 }
-

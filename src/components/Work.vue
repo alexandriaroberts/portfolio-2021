@@ -37,8 +37,8 @@
         feasibility of UI/UX designs.
       </p>
       <p class="paragraph">
-        Created landing pages using Bootstrap and some Jquery on old
-        projects. As well developed sites using Divi in Wordpress.
+        Created landing pages using Bootstrap and some Jquery on old projects.
+        As well developed sites using Divi in Wordpress.
       </p>
       <p class="paragraph">
         Optimizing applications for maximum speed and scalability using Google
@@ -57,8 +57,8 @@
 
     <div class="work__text-2">
       <h3 class="heading-secondary">
-        She Loves Data<span class="work-timeline"
-          > (Front-End Developer, Sept 2019 - Feb 2020 )</span
+        She Loves Data<span class="work-timeline">
+          (Front-End Developer, Sept 2019 - Feb 2020 )</span
         >
       </h3>
       <p class="paragraph">
@@ -96,9 +96,7 @@ export default {};
   grid-template-rows: min-content 1fr min-content;
 
   .heading-primary {
-    grid-row: 1;
-    grid-column: 1;
-    justify-self: center;
+    @include mainHeading;
   }
 
   .side__line {

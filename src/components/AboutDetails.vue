@@ -56,9 +56,7 @@ export default {};
   grid-template-rows: min-content 1fr;
 
   .heading-primary {
-    grid-row: 1;
-    grid-column: 1;
-    justify-self: center;
+    @include mainHeading;
   }
 
   .side__line {
