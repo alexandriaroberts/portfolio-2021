@@ -26,6 +26,7 @@ export default {
 header {
   grid-row: 1;
   grid-column: 5 / 9;
+  justify-self: center;
   @include respond(phone) {
     grid-column: 1 / -1;
   }
