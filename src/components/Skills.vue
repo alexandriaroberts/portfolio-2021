@@ -46,7 +46,11 @@ export default {};
 
 .skills {
   grid-row: 3;
-  grid-column: 3 / 11;
+  grid-column: 2 / 12;
+
+   @include respond(tab-port){
+    grid-column: 1 / -1;
+  }
 
   display: grid;
   grid-template-columns: 20rem 1fr;
@@ -63,6 +67,11 @@ export default {};
       svg {
         top: 25%;
     }
+
+     @include respond(phone) {
+    margin-bottom: -1.5rem;
+
+    }
   }
 
   &__list {
@@ -72,6 +81,12 @@ export default {};
     list-style-type: none;
     padding-left: 5rem;
 
+
+     @include respond(phone) {
+     grid-column: 1 / -1;
+     margin-top: 3rem;
+      }
+      
     &-type {
       &:not(:last-child) {
         margin-bottom: 1.5rem;

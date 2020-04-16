@@ -24,7 +24,7 @@
     <div class="hero__image">
       <img
         src="../../src/assets/images/profile-picture-2.jpg"
-        alt=""
+        alt="Head Shot of Lexie"
         class="hero__image-picture"
       />
     </div>
@@ -36,25 +36,25 @@
 </template>
 
 <script>
-import { TimelineLite, TweenMax, Back, Bezier } from "gsap";
+import { TimelineLite, TweenMax, Back, Bezier } from 'gsap'
 export default {
-  name: "Hero",
+  name: 'Hero',
   components: {},
   props: {
     msg: String
   },
   mounted() {
     // Using GSAP TweenMAx plugin letters animation
-    let letters = ".hero__name span, hero__job-name p";
+    let letters = '.hero__name span, hero__job-name p'
 
     TweenMax.staggerFrom(
       letters,
       0.7,
       { opacity: 0, y: 150, ease: Back.easeOut },
       0.1
-    );
+    )
   }
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -65,18 +65,36 @@ export default {
   grid-row: 1;
   grid-column: 1 / -1;
 
+  display: -ms-grid;
   display: grid;
   grid-template-columns: 1fr 1fr 0.3fr min-content;
-  grid-template-rows: min-content 5rem 1fr 5rem;
+  grid-template-rows: min-content 5rem minmax(20rem, min-content) 5rem;
+  -ms-grid-rows: min-content 5rem minmax(20rem, min-content) 5rem;
+  -ms-grid-columns: 1fr 1fr 0.3fr min-content;
+
+    @include respond(phone) {
+  grid-template-rows: min-content 5rem 50rem 5rem;
+
+    }
+
+  @include respond(phone) {
+    grid-gap: 2.5rem;
+  }
 
   &__name {
     grid-row: 1;
     grid-column: 1 / 2;
 
     font-family: "Lora", serif;
-    line-height: 6.7rem;
     font-weight: normal;
     font-size: 5.8rem;
+    line-height: 6.7rem;
+
+    @include respond(tab-port) {
+      font-size: 3.8rem;
+      line-height: 4.7rem;
+    }
+
     &-first {
       text-transform: uppercase;
       font-style: italic;
@@ -91,11 +109,21 @@ export default {
     grid-column: 2 / 4;
     z-index: 2;
     margin-top: -5rem;
+
+    @include respond(phone) {
+      margin-top: 0;
+    }
+
+    @include respond(phone) {
+      grid-column: 1 / -1;
+    }
+
     &-picture {
       width: 100%;
       height: 100%;
       justify-self: stretch;
       background-size: cover;
+      object-fit: contain;
     }
   }
 
@@ -112,10 +140,16 @@ export default {
     grid-row: 2 / -1;
     grid-column: 4 / -1;
     font-size: 2.2rem;
-		font-weight: normal;
+    font-weight: normal;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     justify-content: start;
-}
+
+    @include respond(phone) {
+      grid-column: 1 / -1;
+      writing-mode: horizontal-tb;
+      margin-bottom: 2.5rem;
+    }
+  }
 }
 </style>

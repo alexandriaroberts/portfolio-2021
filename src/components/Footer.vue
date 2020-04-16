@@ -11,6 +11,7 @@
             rel="noopener"
             class="content__network__link"
             ><svg class="icon" viewBox="0 0 216 216">
+              <title>Twitter</title>
               <use xlink:href="../assets/images/sprite.svg#twitter"></use>
             </svg>
           </a>
@@ -22,6 +23,7 @@
             rel="noopener"
             class="content__github__link"
             ><svg class="icon" viewBox="0 0 216 216">
+              <title>Github</title>
               <use xlink:href="../assets/images/sprite.svg#github"></use></svg
           ></a>
         </div>
@@ -32,6 +34,7 @@
             rel="noopener"
             class="content__network__link"
             ><svg class="icon" viewBox="0 0 216 216">
+              <title>codepen</title>
               <use xlink:href="../assets/images/sprite.svg#codepen"></use></svg
           ></a>
         </div>
@@ -42,6 +45,7 @@
             rel="noopener"
             class="content__network__link"
             ><svg class="icon" viewBox="0 0 216 216">
+              <title>LinkedIn</title>
               <use xlink:href="../assets/images/sprite.svg#linkedin"></use></svg
           ></a>
         </div>
@@ -51,7 +55,7 @@
 </template>
 
 <script>
-import main from "../assets/css/main.scss";
+import main from '../assets/css/main.scss';
 
 export default {};
 </script>
@@ -66,6 +70,7 @@ footer {
   z-index: 1;
   justify-content: center;
   text-align: center;
+  align-self: center;
 }
 .content__networks {
   position: relative;
@@ -90,6 +95,11 @@ a {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 
   transition: all 0.2s ease;
+
+  @include respond(tab-port) {
+    width: 3.5rem;
+  }
+
   &:hover,
   &:focus {
     fill: $color-primary;
@@ -105,7 +115,7 @@ a {
     width: 30%;
     height: 1px;
     left: 10%;
-    top: 12%;
+    top: 12px;
     background: $color-primary;
   }
 
@@ -116,8 +126,18 @@ a {
     width: 30%;
     height: 1px;
     right: 10%;
-    top: 12%;
+    top: 12px;
     background: $color-primary;
+  }
+
+  @include respond(phone) {
+    &::before {
+      width: 20%;
+    }
+
+    &::after {
+      width: 20%;
+    }
   }
 
   .heading-primary {

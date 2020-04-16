@@ -12,18 +12,22 @@
 </template>
 
 <script>
-// import Icons from "./components/animatedicons/Icons";
-import main from "../assets/css/main.scss";
+import main from '../assets/css/main.scss'
 
 export default {
-  name: "home",
+  name: 'home',
   components: {}
-};
+}
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
+@import "../../src/assets/css/main.scss";
+
 header {
   grid-row: 1;
   grid-column: 5 / 9;
+  @include respond(phone) {
+    grid-column: 1 / -1;
+  }
 }
 </style>

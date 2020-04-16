@@ -13,7 +13,7 @@
         <!-- <p class="project-title">{{ project.name }}</p> -->
         <a :href="project.url" target="_blank" rel="noopener">
         <img
-          :src="project.image.imageURL"         
+          :src="project.image.imageURL"
           :alt="project.image.alt"
           :title="project.name"
           class="projectImage"
@@ -26,85 +26,85 @@
 </template>
 
 <script>
-import main from "../assets/css/main.scss";
-import { TweenMax, Power2, TimelineMax } from "gsap/TweenMax";
+import main from '../assets/css/main.scss';
+import { TweenMax, Power2, TimelineMax } from 'gsap/TweenMax';
 
 export default {
   data() {
     return {
       projects: [
         {
-          name: "Flower VueJs Game",
-          url: "https://codepen.io/iamlexieonearth/full/QYNmEa",
+          name: 'Flower VueJs Game',
+          url: 'https://codepen.io/iamlexieonearth/full/QYNmEa',
           image: {
             imageURL:
-              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563170890/Flower_Game_in_VueJS.png",
+              'https://res.cloudinary.com/dv3lue3qa/image/upload/v1563170890/Flower_Game_in_VueJS.png',
             alt:
-              "Flower VueJs Game, player clicks on the flower and get points for clickig on them"
+              'Flower VueJs Game, player clicks on the flower and get points for clickig on them'
           }
         },
         {
-          name: "Space Game with Canvas",
-          url: "https://codepen.io/iamlexieonearth/full/KEoMye",
+          name: 'Space Game with Canvas',
+          url: 'https://codepen.io/iamlexieonearth/full/KEoMye',
           image: {
             imageURL:
-              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563170891/Space_Game_with_Canvas.png",
+              'https://res.cloudinary.com/dv3lue3qa/image/upload/v1563170891/Space_Game_with_Canvas.png',
             alt:
-              "Space Game with Canvas, player plays with key board and catches an alien"
+              'Space Game with Canvas, player plays with key board and catches an alien'
           }
         },
         {
-          name: "Nasa API VueJS",
-          url: "https://codepen.io/iamlexieonearth/full/vwPRPY",
+          name: 'Nasa API VueJS',
+          url: 'https://codepen.io/iamlexieonearth/full/vwPRPY',
           image: {
             imageURL:
-              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563856744/Nasa-API.png",
-            alt: "Nasa API VueJS Project to render images from NaSa"
+              'https://res.cloudinary.com/dv3lue3qa/image/upload/v1563856744/Nasa-API.png',
+            alt: 'Nasa API VueJS Project to render images from NaSa'
           }
         },
         {
-          name: "CSS Grid Poster",
-          url: "https://codepen.io/iamlexieonearth/full/aKOzyL",
+          name: 'CSS Grid Poster',
+          url: 'https://codepen.io/iamlexieonearth/full/aKOzyL',
           image: {
             imageURL:
-              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1562737397/poster.png",
-            alt: "CSS Grid Poster"
+              'https://res.cloudinary.com/dv3lue3qa/image/upload/v1562737397/poster.png',
+            alt: 'CSS Grid Poster'
           }
         },
         {
-          name: "Product Landing Page",
-          url: "https://codepen.io/iamlexieonearth/full/zLzdLJ",
+          name: 'Product Landing Page',
+          url: 'https://codepen.io/iamlexieonearth/full/zLzdLJ',
           image: {
             imageURL:
-              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1562737777/product-landing-page.png",
-            alt: "Product Landing Page of Dog Shoes"
+              'https://res.cloudinary.com/dv3lue3qa/image/upload/v1562737777/product-landing-page.png',
+            alt: 'Product Landing Page of Dog Shoes'
           }
         },
         {
-          name: "Survey Form",
-          url: "https://codepen.io/iamlexieonearth/full/OEqZWJ",
+          name: 'Survey Form',
+          url: 'https://codepen.io/iamlexieonearth/full/OEqZWJ',
           image: {
             imageURL:
-              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563170893/survey_form.png",
-            alt: "Survey Form for Pizza delivery"
+              'https://res.cloudinary.com/dv3lue3qa/image/upload/v1563170893/survey_form.png',
+            alt: 'Survey Form for Pizza delivery'
           }
         },
         {
-          name: "Coffee Shop Page Layout",
-          url: "https://codepen.io/iamlexieonearth/full/QxQbXX",
+          name: 'Coffee Shop Page Layout',
+          url: 'https://codepen.io/iamlexieonearth/full/QxQbXX',
           image: {
             imageURL:
-              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563171098/coffee-shop.png",
-            alt: "Coffee Shop Page Layout with cosy vibe"
+              'https://res.cloudinary.com/dv3lue3qa/image/upload/v1563171098/coffee-shop.png',
+            alt: 'Coffee Shop Page Layout with cosy vibe'
           }
         },
         {
-          name: "Tribute Page",
-          url: "https://codepen.io/iamlexieonearth/full/jGBRRE",
+          name: 'Tribute Page',
+          url: 'https://codepen.io/iamlexieonearth/full/jGBRRE',
           image: {
             imageURL:
-              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563171331/Tribute_Page_for_Free_Code_Camp_CSS_Grid_Layout.png",
-            alt: "Tribute Page of Dr. B R  Ambedkar"
+              'https://res.cloudinary.com/dv3lue3qa/image/upload/v1563171331/Tribute_Page_for_Free_Code_Camp_CSS_Grid_Layout.png',
+            alt: 'Tribute Page of Dr. B R  Ambedkar'
           }
         }
       ]

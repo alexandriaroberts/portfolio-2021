@@ -8,6 +8,18 @@
 		position: absolute;
 		right: -10px;
 	}
+
+	@include respond(phone) {
+		grid-row: 1;
+		grid-column: 1 / -1;
+	    border-right: 0;
+
+		border-bottom: solid 1px $color-primary;
+
+		svg {
+			display: none;
+		}
+	}
 }
 
 @mixin text-shadow {
@@ -18,6 +30,10 @@
 	grid-column: 1;
 	justify-self: center;
 	padding-right: 5rem;
+
+	@include respond(phone) {
+		justify-self: start;
+	}
 }
 
 @mixin underline {

@@ -13,7 +13,7 @@
               fill="rgb(196, 23, 23)"
             />
           </svg></div>
-          <div class="about-text">
+      <div class="achievement-text">
       <p class="paragraph">
         <!-- <img src="../assets/images/wave.svg"> -->
        Won a T-shirt for contributing to open source issue of &rarr; <a href="https://www.vuevixens.org/" class="link" target="_blank">Vue Vixen</a>.
@@ -37,7 +37,11 @@ export default {};
 
 .achievements {
   grid-row: 4;
-  grid-column: 3 / 11;
+  grid-column: 2 / 12;
+
+  @include respond(tab-port){
+    grid-column: 1 / -1;
+  }
 
   display: grid;
   grid-template-columns: 20rem 1fr;
@@ -51,10 +55,22 @@ export default {};
     @include line;
     margin: -6.5rem 0;
 
+    @include respond(phone) {
+       margin-bottom: -1.5rem;
+    }
       svg {
         top: 25%;
     }
   }
+  .achievement-text {
+    grid-row: 2;
+    grid-column: 2;
+    align-self: center;
 
+     @include respond(phone) {
+     grid-column: 1 / -1;
+     margin-top: 3rem;
+      }
+  }
 }
 </style>
