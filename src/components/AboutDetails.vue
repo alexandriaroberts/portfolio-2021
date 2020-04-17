@@ -20,10 +20,12 @@
 
     <div class="about-text">
       <p class="paragraph">
-        Hello, I am Lexie, a Front-End Developer. I love working with CSS,
-        JavaScrit and VueJs. I have worked on variety oof projects for work and
-        personal projects, where I could quickly pick up new frameworks and
-        languages. Please look at my projects section.
+        Hello, I am Lexie, a Front-End Developer. Looking for my next
+        opportunity either remote. I am very happy to relocate to a new location
+        for the right job. I love working with CSS, JavaScrit and VueJs. I have
+        worked on variety oof projects for work and personal projects, where I
+        could quickly pick up new frameworks and languages. Please look at my
+        projects section.
       </p>
       <p class="paragraph">
         In my spare time, I love visiting nature, going for long swims, and
@@ -51,7 +53,7 @@ export default {};
   grid-row: 2;
   grid-column: 2 / 12;
 
-  @include respond(tab-port){
+  @include respond(tab-port) {
     grid-column: 1 / -1;
   }
 
@@ -68,8 +70,7 @@ export default {};
     margin-bottom: -6.5rem;
 
     @include respond(phone) {
-    margin-bottom: -1.5rem;
-
+      margin-bottom: -1.5rem;
     }
     svg {
       top: 4%;
@@ -81,10 +82,10 @@ export default {};
     grid-column: 2;
     align-self: center;
 
-     @include respond(phone) {
-     grid-column: 1 / -1;
-     margin-top: 3rem;
-      }
+    @include respond(phone) {
+      grid-column: 1 / -1;
+      margin-top: 3rem;
+    }
   }
 }
 </style>
