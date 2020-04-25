@@ -108,18 +108,11 @@ export default {
     };
   },
   methods: {
-    select(projectUrl) {
+    select (projectUrl) {
       window.location.href = projectUrl;
       console.log(projectUrl);
     }
-    // animateBox() {
-    //   TweenMax.to(
-    //     ".grid_item",
-    //     1.5,
-    //     { scale: 0.95, ease: Power2.easeOut, yoyo: true },
-    //     0.1
-    //   );
-    // }
+
   }
 };
 </script>

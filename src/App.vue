@@ -14,7 +14,6 @@ import main from "./assets/css/main.scss";
 export default {
   name: "home",
   components: {
-    //  Icons,
     Header,
     Footer
   }

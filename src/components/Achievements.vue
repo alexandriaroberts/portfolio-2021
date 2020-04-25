@@ -15,7 +15,6 @@
           </svg></div>
       <div class="achievement-text">
       <p class="paragraph">
-        <!-- <img src="../assets/images/wave.svg"> -->
        Won a T-shirt for contributing to open source issue of &rarr; <a href="https://www.vuevixens.org/" class="link" target="_blank">Vue Vixen</a>.
       </p>
       <p class="paragraph">
