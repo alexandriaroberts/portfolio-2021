@@ -24,7 +24,7 @@ export default {
     Achievements,
     Work
   }
-};
+}
 </script>
 
 <style scoped lang="scss">

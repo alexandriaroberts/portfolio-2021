@@ -5,10 +5,10 @@
 </template>
 
 <script>
-import ProjectDetails from '../components/ProjectDetails';
-import main from '../assets/css/main.scss';
+import ProjectDetails from "../components/ProjectDetails";
+import main from "../assets/css/main.scss";
 export default {
-  name: 'projects',
+  name: "projects",
   components: {
     ProjectDetails
   }
@@ -18,24 +18,13 @@ export default {
 <style scoped lang="scss">
 .project-details {
   grid-column: 1 / -1;
-  grid-row: 2 ;
-
-
-  }
-
-// .MorphingArea {
-//   // position: relative;
-//   grid-column: 2;
-//   grid-row: 1 / 4;
-// }
-
-
+  grid-row: 2;
+}
 @media (max-width: 490px) {
-.project-details {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-  // padding-top: 5rem;
- justify-self: center;
+  .project-details {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    justify-self: center;
   }
 }
 </style>
