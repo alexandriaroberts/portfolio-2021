@@ -15,12 +15,12 @@
           </svg></div>
       <div class="achievement-text">
       <p class="paragraph">
-       Won a T-shirt for contributing to open source issue of &rarr; <a href="https://www.vuevixens.org/" class="link" target="_blank">Vue Vixen</a>.
+       Won a T-shirt for contributing to open source issue of &rarr; <a href="https://www.vuevixens.org/" class="link" target="_blank" rel="noopener">Vue Vixen</a>.
       </p>
       <p class="paragraph">
         Proudest moment for me, when my pen, which is done using Nasa API and Vue.JS got featured on codepen, you can check out &rarr;
 
-        <a href="https://codepen.io/iamlexieonearth/full/vwPRPY" target="_blank" class="link">the project</a> here.
+        <a href="https://codepen.io/iamlexieonearth/full/vwPRPY" target="_blank" class="link" rel="noopener">the project</a> here.
       </p>
     </div>
 
