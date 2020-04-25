@@ -23,7 +23,7 @@
     </h1>
     <div class="hero__image">
       <img
-        src="../../src/assets/images/profile-picture-2.jpg"
+        src="../../src/assets/images/profile-picture.jpg"
         alt="Head Shot of Lexie"
         class="hero__image-picture"
       />
