@@ -23,7 +23,6 @@ export default {
 @media (max-width: 490px) {
   .project-details {
     grid-column: 1 / -1;
-    grid-row: 1 / -1;
     justify-self: center;
   }
 }
