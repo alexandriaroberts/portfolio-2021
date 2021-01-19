@@ -30,6 +30,26 @@ export default {
   data() {
     return {
       projects: [
+          {
+          name: "Rooots",
+          url: "https://www.rooots.io/",
+          image: {
+            imageURL:
+              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1611069221/rooots1.png",
+            alt:
+              "Rooots, platform for mentoring women in tech"
+          }
+        },
+          {
+          name: "Align Somatics Movement",
+          url: "https://www.alignsomatics.com/",
+          image: {
+            imageURL:
+              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1611068604/as.png",
+            alt:
+              "Align Somatics, help people to manage their stress levels with somatic movement"
+          }
+        },
         {
           name: "Flower VueJs Game",
           url: "https://codepen.io/iamlexieonearth/full/QYNmEa",
