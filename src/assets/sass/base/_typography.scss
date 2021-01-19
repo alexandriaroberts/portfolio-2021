@@ -1,96 +1,78 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Raleway:ital,wght@0,100;0,300;0,400;1,100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Raleway:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&display=swap');
 
 body {
-	color: $color-primary;
-	word-spacing: 0.1em;
-	font-family: "Poppins", sans-serif;
-	font-size: $default-font-size;
-	font-weight: 400;
-	line-height: 1.6;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	line-height: 1.7;
+  color: $color-primary;
+  word-spacing: 0.1em;
+  font-family: 'Poppins', sans-serif;
+  font-size: $default-font-size;
+  font-weight: 400;
+  line-height: 1.6;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.7;
 }
 
 .heading-primary {
-	font-family: "Lora", serif;
-	font-weight: normal;
-	font-size: inherit;
-	backface-visibility: hidden;
-	text-align: center;
-	.underline {
-		@include underline;
-	}
+  font-family: 'Lora', serif;
+  font-weight: normal;
+  font-size: inherit;
+  backface-visibility: hidden;
+  text-align: center;
+  .underline {
+    @include underline;
+  }
 }
 
 .heading-secondary {
-	font-family: "Lora", serif;
-	font-size: 2.5rem;
-	font-weight: normal;
-	color: $color-primary;
-	letter-spacing: 0.2rem;
-	transition: all 0.2s;
-	padding-left: 5rem;
-	margin-bottom: 3rem;
+  font-family: 'Lora', serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: $color-primary;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+  padding-left: 5rem;
+  margin-bottom: 3rem;
 
-	.work-timeline {
-		font-style: italic;
-		font-size: 2rem;
-	}
-	// @include respond(tab-port) {
-	//     font-size: 3rem;
-	// }
+  .work-timeline {
+    font-style: italic;
+    font-size: 2rem;
+  }
+  // @include respond(tab-port) {
+  //     font-size: 3rem;
+  // }
 
-	// @include respond(phone) {
-	//     font-size: 2.5rem;
-	// }
+  // @include respond(phone) {
+  //     font-size: 2.5rem;
+  // }
 }
 
 .achievements {
-	a {
-		position: relative;
-		color: inherit;
-		text-decoration: none;
-		line-height: 24px;
-		&:before,
-		&:after {
-			content: " ";
-			position: absolute;
-			transition: transform 0.2s ease;
-		}
-	}
-	.link {
-		font-size: $default-font-size + 0.2rem;
-		font-family: "Lora", serif;
-		text-transform: uppercase;
-		font-weight: normal;
-		color: $color-primary;
-		transition: all 0.2s;
-		display: inline-block;
-		overflow: hidden;
-		&:before {
-			left: 0;
-			bottom: 0;
-			width: 100%;
-			height: 1px;
-			background: $color-primary;
-			transform: translateX(-100%);
-		}
-		&:hover:before {			
-			transform: translateX(0);
-		}
-	}
+  a {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    line-height: 24px;
+    &:before,
+    &:after {
+      content: ' ';
+      position: absolute;
+      transition: transform 0.2s ease;
+    }
+  }
+  .link {
+   @include link
+  }
 }
 
 .paragraph {
-	font-size: $default-font-size + 0.2rem;
-	font-family: inherit;
-	font-weight: normal;
-	color: $color-tertiary-dark;
-	padding-left: 5rem;
+  font-size: $default-font-size + 0.2rem;
+  font-family: inherit;
+  font-weight: normal;
+  color: $color-tertiary-dark;
+  padding-left: 5rem;
 
-	&:not(:last-child) {
-		margin-bottom: 3rem;
-	}
+  &:not(:last-child) {
+    margin-right: 3rem;
+  }
 }

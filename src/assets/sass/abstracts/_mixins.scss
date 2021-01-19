@@ -1,3 +1,24 @@
+@mixin link {
+	font-size: $default-font-size + 0.2rem;
+	font-family: 'Lora', serif;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: $color-primary;
+	transition: all 0.2s;
+	display: inline-block;
+	overflow: hidden;
+	&:before {
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 1px;
+		background: $color-primary;
+		transform: translateX(-100%);
+	}
+	&:hover:before {
+		transform: translateX(0);
+	}
+}
 @mixin line {
 	grid-row: 1 / -1;
 	grid-column: 1;
@@ -80,3 +101,4 @@ ORDER: Base + typography > general layout + grid > page layout > components
 		} //1800
 	}
 }
+

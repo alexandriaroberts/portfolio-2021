@@ -17,7 +17,33 @@
         />
       </svg>
     </div>
+    <div class="work__text-rooots">
+      <h3 class="heading-secondary">
+        Rooots<span class="work-timeline">
+          (Front-End Developer, April 2020 )</span
+        >
+      </h3>
+      <p class="paragraph">
+        This is a project I started while working doing Mozilla's incubator
+        program as a founder and team leader, with managing a team of 5, as well
+        as conducting user interviews for research project to we developed on
+        working a MVP using VueJS. This is an ongoing passion side project of
+        mine!😊 You can check here:
+        <a
+          href="https://rooots.io/"
+          class="link"
+          target="_blank"
+          rel="noopener"
+          >Rooots</a
+        >.
+      </p>
 
+      <p class="paragraph">
+        Participated in daily team meetings, sharing the things we achieved on
+        the day before and our to do lists for the day while collaborating with
+        other team members remotely.
+      </p>
+    </div>
     <div class="work__text-1">
       <h3 class="heading-secondary">
         Joyjet Digital Space Agency<span class="work-timeline">
@@ -90,6 +116,9 @@ export default {};
 .work {
   grid-row: 5;
   grid-column: 2 / 12;
+  .link {
+    @include link;
+  }
 
   @include respond(tab-port) {
     grid-column: 1 / -1;
@@ -97,7 +126,7 @@ export default {};
 
   display: grid;
   grid-template-columns: 20rem 1fr;
-  grid-template-rows: min-content 1fr min-content;
+  grid-template-rows: min-content 1fr min-content min-content;
 
   .heading-primary {
     @include mainHeading;
@@ -116,10 +145,21 @@ export default {};
     }
   }
 
-  &__text-1 {
+  &__text-rooots {
     grid-row: 2;
     grid-column: 2;
     align-self: center;
+    @include respond(phone) {
+      grid-column: 1 / -1;
+      margin-top: 3rem;
+    }
+  }
+
+  &__text-1 {
+    grid-row: 3;
+    grid-column: 2;
+    align-self: center;
+    margin-top: 6.5rem;
 
     @include respond(phone) {
       grid-column: 1 / -1;
@@ -128,7 +168,7 @@ export default {};
   }
 
   &__text-2 {
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 2;
     align-self: center;
     margin-top: 6.5rem;

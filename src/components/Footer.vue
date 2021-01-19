@@ -10,7 +10,8 @@
             target="_blank"
             rel="noopener"
             class="content__network__link"
-            ><svg class="icon" viewBox="0 0 216 216">
+            >
+            <svg class="icon" viewBox="0 0 216 216">
               <title>Twitter</title>
               <use xlink:href="../assets/images/sprite.svg#twitter"></use>
             </svg>

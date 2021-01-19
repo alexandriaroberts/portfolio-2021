@@ -30,8 +30,9 @@
               Foundation Zurb
            </li>
             <li class="skills__list-type">
-              Basic React
+              React
            </li>
+           <li>Node/ Express/ MongoDB</li>
          </ul>
 
   </section>

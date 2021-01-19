@@ -108,11 +108,10 @@ export default {
     };
   },
   methods: {
-    select (projectUrl) {
+    select(projectUrl) {
       window.location.href = projectUrl;
       console.log(projectUrl);
     }
-
   }
 };
 </script>
