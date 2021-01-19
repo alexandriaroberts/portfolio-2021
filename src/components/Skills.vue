@@ -24,7 +24,7 @@
               Vue.JS
            </li>
             <li class="skills__list-type">
-              SSS/SASS
+              CSS/SASS
            </li>
             <li class="skills__list-type">
               Foundation Zurb
