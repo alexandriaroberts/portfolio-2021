@@ -35,7 +35,7 @@ export default {
           url: "https://thebigspoon.ca",
           image: {
             imageURL:
-              "https://res.cloudinary.com/dv3lue3qa/image/upload/c_limit,h_100,w_150/v1616050868/2E1F2560-9DBC-4F1C-99D7-D264D0ADC4C7_1_201_a.jpg",
+              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1616051142/2E1F2560-9DBC-4F1C-99D7-D264D0ADC4C7_1_201_a.jpg",
             alt:
               "The Big Spoon, is a homemade soup pick up service"
           }
