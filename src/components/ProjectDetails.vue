@@ -30,6 +30,16 @@ export default {
   data() {
     return {
       projects: [
+        {
+          name: "The Big Spoon",
+          url: "https://thebigspoon.ca",
+          image: {
+            imageURL:
+              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1616049754/2E1F2560-9DBC-4F1C-99D7-D264D0ADC4C7_1_201_a.jpg",
+            alt:
+              "The Big Spoon, is a homemade soup pick up service"
+          }
+        },
           {
           name: "Rooots",
           url: "https://www.rooots.io/",
