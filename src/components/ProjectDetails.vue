@@ -7,58 +7,64 @@
       :key="index"
       ref="projectImage"
       role="projectItem"
-      class="projectImage"
+      class="project-item"
     >
-      <a :href="project.url" target="_blank" rel="noopener">
+      <div class="project-image">
         <img
           :src="project.image.imageURL"
           :alt="project.image.alt"
           :title="project.name"
           class="projectImage"
         />
-      </a>
-      <p class="project-title">{{ project.name }}</p>
+      </div>
+      <div>
+        <p class="project-title heading-primary">{{ project.name }}</p>
+        <p class="project-description paragraph">{{ project.description }}</p>
+        <p class="project-languages">
+          <span class="heading-primary">Languages:</span>
+          <span class="paragraph">{{ project.languages }}</span>
+        </p>
+        <div class="project-buttons">
+          <button class="project-buttons__code">
+            <a
+              :href="project.btnSourceCode"
+              target="_blank"
+              v-if="project.btnSourceCode"
+              class="link"
+              >View Code</a
+            >
+          </button>
+          <button class="project-buttons__site">
+            <a :href="project.btnSite" target="_blank" class="link"
+              >View site</a
+            >
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import main from "../assets/css/main.scss";
-import { TweenMax, Power2, TimelineMax } from "gsap/TweenMax";
 
 export default {
   data() {
     return {
       projects: [
         {
-          name: "The Big Spoon",
-          url: "https://thebigspoon.ca",
-          image: {
-            imageURL:
-              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1616051142/2E1F2560-9DBC-4F1C-99D7-D264D0ADC4C7_1_201_a.jpg",
-            alt:
-              "The Big Spoon, is a homemade soup pick up service"
-          }
-        },
-          {
           name: "Rooots",
           url: "https://www.rooots.io/",
           image: {
             imageURL:
               "https://res.cloudinary.com/dv3lue3qa/image/upload/v1611069221/rooots1.png",
-            alt:
-              "Rooots, platform for mentoring women in tech"
-          }
-        },
-          {
-          name: "Align Somatics Movement",
-          url: "https://www.alignsomatics.com/",
-          image: {
-            imageURL:
-              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1611068604/as.png",
-            alt:
-              "Align Somatics, help people to manage their stress levels with somatic movement"
-          }
+            alt: "Rooots, platform for mentoring women in tech"
+          },
+          description:
+            "This is the side project I am working on which is in VueJS, this has been very exciting project to begin with and been pushed to learn alot as a develoepr and team leader from this",
+          languages: "VueJS, SCSS/SASS, Netlify hosting, Mailchimp",
+          btnSourceCode: "https://github.com/Rooots-io",
+          btnSite: "https://rooots.io/"
         },
         {
           name: "Flower VueJs Game",
@@ -68,8 +74,45 @@ export default {
               "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563170890/Flower_Game_in_VueJS.png",
             alt:
               "Flower VueJs Game, player clicks on the flower and get points for clickig on them"
-          }
+          },
+          description:
+            "This is fun little VueJS game, you have to click on the flower to get the points.",
+          languages: "VueJS, SCSS/SASS, Netlify",
+          btnSourceCode:
+            "https://github.com/alexandriaroberts/FlowerGame-VueJS",
+          btnSite: "https://codepen.io/iamlexieonearth/full/QYNmEa"
         },
+
+        {
+          name: "The Big Spoon",
+          url: "https://thebigspoon.ca",
+          image: {
+            imageURL:
+              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1616051142/2E1F2560-9DBC-4F1C-99D7-D264D0ADC4C7_1_201_a.jpg",
+            alt: "The Big Spoon, is a homemade soup pick up service"
+          },
+          description:
+            "This is an E-commerce soup pick up website I did for a client, with complete integration of payment etc, also did the design of it and I had to look into some theme code too",
+          languages: "WordPress, CMS, Php, plugins ",
+          btnSourceCode: "",
+          btnSite: "https://thebigspoon.ca/"
+        },
+        {
+          name: "Align Somatics Movement",
+          url: "https://www.alignsomatics.com/",
+          image: {
+            imageURL:
+              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1611068604/as.png",
+            alt:
+              "Align Somatics, help people to manage their stress levels with somatic movement"
+          },
+          description:
+            "The client wanted to work on teh existing site, retaining soem pages, have have redesign of the homepage, etc. Interestingly, I used alot of HTML/CSS in this with also some Kajabi's features to deliver the design",
+          languages: "Kajabi CMS, HTML, CSS, plugins ",
+          btnSourceCode: "",
+          btnSite: "https://www.alignsomatics.com/"
+        },
+
         {
           name: "Space Game with Canvas",
           url: "https://codepen.io/iamlexieonearth/full/KEoMye",
@@ -78,7 +121,13 @@ export default {
               "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563170891/Space_Game_with_Canvas.png",
             alt:
               "Space Game with Canvas, player plays with key board and catches an alien"
-          }
+          },
+          description:
+            "This is a space game using JavaScript and Canvas, you have to use your arrow keys to catch an alien by moving the space man",
+          languages: "JavaScript, Canvas ",
+          btnSourceCode:
+            "https://github.com/alexandriaroberts/Space-Game-with-Canvas",
+          btnSite: "https://codepen.io/iamlexieonearth/full/KEoMye"
         },
         {
           name: "Nasa API VueJS",
@@ -87,52 +136,12 @@ export default {
             imageURL:
               "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563856744/Nasa-API.png",
             alt: "Nasa API VueJS Project to render images from NaSa"
-          }
-        },
-        {
-          name: "CSS Grid Poster",
-          url: "https://codepen.io/iamlexieonearth/full/aKOzyL",
-          image: {
-            imageURL:
-              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1562737397/poster.png",
-            alt: "CSS Grid Poster"
-          }
-        },
-        {
-          name: "Product Landing Page",
-          url: "https://codepen.io/iamlexieonearth/full/zLzdLJ",
-          image: {
-            imageURL:
-              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1562737777/product-landing-page.png",
-            alt: "Product Landing Page of Dog Shoes"
-          }
-        },
-        {
-          name: "Survey Form",
-          url: "https://codepen.io/iamlexieonearth/full/OEqZWJ",
-          image: {
-            imageURL:
-              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563170893/survey_form.png",
-            alt: "Survey Form for Pizza delivery"
-          }
-        },
-        {
-          name: "Coffee Shop Page Layout",
-          url: "https://codepen.io/iamlexieonearth/full/QxQbXX",
-          image: {
-            imageURL:
-              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563171098/coffee-shop.png",
-            alt: "Coffee Shop Page Layout with cosy vibe"
-          }
-        },
-        {
-          name: "Tribute Page",
-          url: "https://codepen.io/iamlexieonearth/full/jGBRRE",
-          image: {
-            imageURL:
-              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1563171331/Tribute_Page_for_Free_Code_Camp_CSS_Grid_Layout.png",
-            alt: "Tribute Page of Dr. B R  Ambedkar"
-          }
+          },
+          description:
+            "This project got me my first Codepen featured, doen in VueJs with Nasa API",
+          languages: "VueJS, CSS, Nasa API",
+          btnSourceCode: "https://github.com/alexandriaroberts/Nasa-API",
+          btnSite: "https://codepen.io/iamlexieonearth/full/vwPRPY"
         }
       ]
     };
@@ -152,8 +161,8 @@ export default {
 .project__grid {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-auto-rows: 40rem;
+  grid-template-columns: repeat(minmax(250px, 1fr));
+  grid-auto-rows: 45rem;
   grid-auto-flow: dense;
   grid-row-gap: 7em;
   grid-column-gap: 5em;
@@ -161,12 +170,23 @@ export default {
   align-self: center;
 }
 
+.project-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 50rem;
+  // grid-column-gap: 3em;
+  grid-auto-flow: dense;
+}
+
 img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
   position: relative;
   padding: 1em 0 1em 0;
+}
+
+.project-image {
+  height: 20rem;
 }
 
 .projectImage {
@@ -184,12 +204,30 @@ img {
 }
 
 .project-title {
-  text-align: center;
+  text-align: left;
+  margin-left: 5rem;
   color: rgb(196, 23, 23);
   width: 100%;
   height: 12%;
 }
 
+.project-languages {
+  margin-top: 1rem;
+  margin-left: 5rem;
+
+  .paragraph {
+    padding-left: 1rem !important;
+  }
+}
+.link {
+  @include link;
+}
+
+button {
+  border: none;
+  padding-left: 5rem;
+  padding-top: 2rem;
+}
 @media (max-width: 760px) {
   h1 {
     font-size: 22px;
