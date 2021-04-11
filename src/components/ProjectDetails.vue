@@ -17,7 +17,7 @@
           class="projectImage"
         />
       </div>
-      <div>
+      <div class="project-info">
         <p class="project-title heading-primary">{{ project.name }}</p>
         <p class="project-description paragraph">{{ project.description }}</p>
         <p class="project-languages">
@@ -52,6 +52,20 @@ export default {
   data() {
     return {
       projects: [
+        {
+          name: "React Form With API",
+          url: "https://react-form-with-api.netlify.app/",
+          image: {
+            imageURL:
+              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1611069221/rooots1.png",
+            alt: "Rooots, platform for mentoring women in tech"
+          },
+          description:
+            "This is the project I worked on which is in VueJS, this has been very exciting project to begin with and been pushed to learn alot as a develoepr and team leader from this",
+          languages: "ReactJS, Netlify, Netlify hosting, Restcountries.eu API",
+          btnSourceCode: "https://github.com/Rooots-io",
+          btnSite: "https://rooots.io/"
+        },
         {
           name: "Rooots",
           url: "https://www.rooots.io/",
@@ -158,35 +172,37 @@ export default {
 <style scoped lang="scss">
 @import "../../src/assets/css/main.scss";
 
-.project__grid {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(minmax(250px, 1fr));
-  grid-auto-rows: 45rem;
-  grid-auto-flow: dense;
-  grid-row-gap: 7em;
-  grid-column-gap: 5em;
-  justify-self: center;
-  align-self: center;
-}
-
 .project-item {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 50rem;
   // grid-column-gap: 3em;
   grid-auto-flow: dense;
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+}
+.project-info {
+  @include respond(tab-port) {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+  }
 }
 
 img {
   width: 100%;
   object-fit: cover;
   position: relative;
-  padding: 1em 0 1em 0;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .project-image {
-  height: 20rem;
+  width: 100%;
+  justify-self: center;
+  @include respond(tab-port) {
+    width: 70%;
+  }
 }
 
 .projectImage {
@@ -196,11 +212,6 @@ img {
   top: 0;
   background-size: cover;
   background-position: 50% 50%;
-  transition: all 0.2s;
-}
-
-.projectImage:hover {
-  transform: translateY(-3px);
 }
 
 .project-title {
