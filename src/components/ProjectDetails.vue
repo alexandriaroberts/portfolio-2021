@@ -46,8 +46,6 @@
 </template>
 
 <script>
-import main from "../assets/css/main.scss";
-
 export default {
   data() {
     return {
@@ -57,14 +55,15 @@ export default {
           url: "https://react-form-with-api.netlify.app/",
           image: {
             imageURL:
-              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1611069221/rooots1.png",
-            alt: "Rooots, platform for mentoring women in tech"
+              "https://res.cloudinary.com/dv3lue3qa/image/upload/v1618209902/Screenshot_2021-04-12_at_14.44.31.png",
+            alt: "React form with react-hook-form and restcountrie.eu API"
           },
           description:
-            "This is the project I worked on which is in VueJS, this has been very exciting project to begin with and been pushed to learn alot as a develoepr and team leader from this",
+            "This is an example of how to use React hook form with restcountrie.eu API and the UI is done in tailwind CSS",
           languages: "ReactJS, Netlify, Netlify hosting, Restcountries.eu API",
-          btnSourceCode: "https://github.com/Rooots-io",
-          btnSite: "https://rooots.io/"
+          btnSourceCode:
+            "https://github.com/alexandriaroberts/react-form-with-api",
+          btnSite: "https://react-form-with-api.netlify.app/"
         },
         {
           name: "Rooots",
@@ -206,7 +205,6 @@ img {
 }
 
 .projectImage {
-  cursor: pointer;
   display: block;
   grid-auto-flow: column;
   top: 0;
@@ -236,6 +234,7 @@ img {
 
 button {
   border: none;
+  background: none;
   padding-left: 5rem;
   padding-top: 2rem;
 }
