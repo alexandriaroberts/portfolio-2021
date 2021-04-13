@@ -120,7 +120,7 @@ export default {
               "Align Somatics, help people to manage their stress levels with somatic movement"
           },
           description:
-            "The client wanted to work on teh existing site, retaining soem pages, have have redesign of the homepage, etc. Interestingly, I used alot of HTML/CSS in this with also some Kajabi's features to deliver the design",
+            "The client wanted me to work on the existing site, retaining some pages, so I also designed the homepage and some other pages, while doing some changes on the rest. Interestingly, I used alot of HTML/CSS in this to get this design, also some Kajabi's features to deliver the design",
           languages: "Kajabi CMS, HTML, CSS, plugins ",
           btnSourceCode: "",
           btnSite: "https://www.alignsomatics.com/"
