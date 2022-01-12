@@ -17,6 +17,43 @@
         />
       </svg>
     </div>
+    <div class="work__text-apy">
+      <h3 class="heading-secondary">
+        APY Vision
+        <span class="work-timeline">
+          (Front-End Developer Intern, April 2021 - December 2021 )</span
+        >
+      </h3>
+      <p class="paragraph">
+        Working as an intern in my first crypto job, I learned a lot from the
+        seniors and the team, it was a great experience!😊
+      </p>
+      <p class="paragraph">
+        - Worked on creating a marketing site, one page apps for trends etc in
+        React, Sass for the company. See marketing site here:
+        <a
+          href="https://apy.vision/"
+          class="link"
+          target="_blank"
+          rel="noopener"
+        >
+          APY Vision</a
+        >
+      </p>
+      <p class="paragraph">
+        - Building web interfaces, features using API's, bug fixes and updating
+        front-end design while moving from V1 to V2.
+      </p>
+      <p class="paragraph">
+        - Working with storybook, creating web pages to show different types of
+        protocols data and tracking.
+      </p>
+      <p class="paragraph">
+        - Participated in daily team meetings remotely, sharing the things we
+        achieved on the day before and our to do lists for the day while
+        collaborating with other team members remotely.
+      </p>
+    </div>
     <div class="work__text-rooots">
       <h3 class="heading-secondary">
         Rooots<span class="work-timeline">
@@ -29,19 +66,9 @@
         as conducting user interviews for research project to we developed on
         working a MVP using VueJS. This is an ongoing passion side project of
         mine!😊 You can check here:
-        <a
-          href="https://rooots.io/"
-          class="link"
-          target="_blank"
-          rel="noopener"
+        <a href="https://rooots.io/" class="link" target="_blank" rel="noopener"
           >Rooots</a
         >.
-      </p>
-
-      <p class="paragraph">
-        Participated in daily team meetings, sharing the things we achieved on
-        the day before and our to do lists for the day while collaborating with
-        other team members remotely.
       </p>
     </div>
     <div class="work__text-1">
@@ -51,31 +78,31 @@
         >
       </h3>
       <p class="paragraph">
-        Developed new user-facing features in languages such as HTML5, CSS and
+        - Developed new user-facing features in languages such as HTML5, CSS and
         JavaScript.
       </p>
       <p class="paragraph">
-        Learned and worked on creating email designs using Foundation Zurb for
+        - Learned and worked on creating email designs using Foundation Zurb for
         clients.
       </p>
       <p class="paragraph">
-        Built reusable code in React for future use while ensuring the technical
-        feasibility of UI/UX designs.
+        - Built reusable code in React for future use while ensuring the
+        technical feasibility of UI/UX designs.
       </p>
       <p class="paragraph">
-        Created landing pages using Bootstrap and some Jquery on old projects.
+        - Created landing pages using Bootstrap and some Jquery on old projects.
         As well developed sites using Divi in Wordpress.
       </p>
       <p class="paragraph">
-        Optimizing applications for maximum speed and scalability using Google
+        - Optimizing applications for maximum speed and scalability using Google
         Developer Tools and Lighthouse.
       </p>
       <p class="paragraph">
-        Used Git extensively on all the projects, also used Bitbucket as part of
-        the companies version control tool.
+        - Used Git extensively on all the projects, also used Bitbucket as part
+        of the companies version control tool.
       </p>
       <p class="paragraph">
-        Participated in daily team meetings, sharing the things we achieved on
+        - Participated in daily team meetings, sharing the things we achieved on
         the day before and our to do lists for the day while collaborating with
         other team members remotely.
       </p>
@@ -88,19 +115,20 @@
         >
       </h3>
       <p class="paragraph">
-        Writing code in one or more programming or scripting languages, such as
-        HTML5, CSS or JavaScript in Word Press.
+        - Writing code in one or more programming or scripting languages, such
+        as HTML5, CSS or JavaScript in Word Press.
       </p>
       <p class="paragraph">
-        Deciding on the best technologies/plugins and languages for the project,
-        testing sites and applications in different browsers and environments.
+        - Deciding on the best technologies/plugins and languages for the
+        project, testing sites and applications in different browsers and
+        environments.
       </p>
       <p class="paragraph">
-        Problem solving, fixing bugs in existing projects.
+        - Problem solving, fixing bugs in existing projects.
       </p>
       <p class="paragraph">
-        Testing new features thoroughly to ensure they perform the correct task
-        in all cases.
+        - Testing new features thoroughly to ensure they perform the correct
+        task in all cases.
       </p>
     </div>
   </section>
@@ -114,7 +142,7 @@ export default {};
 @import "../../src/assets/css/main.scss";
 
 .work {
-  grid-row: 5;
+  grid-row: 6;
   grid-column: 2 / 12;
   .link {
     @include link;
@@ -134,6 +162,7 @@ export default {};
 
   .side__line {
     @include line;
+    grid-row: 1 / 7;
     margin-top: -6.5rem;
 
     @include respond(phone) {
@@ -145,7 +174,7 @@ export default {};
     }
   }
 
-  &__text-rooots {
+  &__text-apy {
     grid-row: 2;
     grid-column: 2;
     align-self: center;
@@ -155,8 +184,19 @@ export default {};
     }
   }
 
-  &__text-1 {
+  &__text-rooots {
     grid-row: 3;
+    grid-column: 2;
+    align-self: center;
+    margin-top: 6.5rem;
+    @include respond(phone) {
+      grid-column: 1 / -1;
+      margin-top: 3rem;
+    }
+  }
+
+  &__text-1 {
+    grid-row: 4;
     grid-column: 2;
     align-self: center;
     margin-top: 6.5rem;
@@ -168,7 +208,7 @@ export default {};
   }
 
   &__text-2 {
-    grid-row: 4;
+    grid-row: 5;
     grid-column: 2;
     align-self: center;
     margin-top: 6.5rem;

@@ -23,10 +23,11 @@
         Hello, I am Lexie, a Front-End Developer based in Bali. Looking for my
         next opportunity either remote or onsite. I am very happy to relocate to
         a new location for the right job. I love working with CSS, JavaScript,
-        React and VueJs. Anything JavaScript and I love digging into it more. I
-        also love learning new technologies. I have worked on variety of
-        projects for work and on personal projects, where I could quickly pick
-        up new frameworks and languages. Please look at my projects section.
+        React and being in crypto space. Anything JavaScript and I love digging
+        into it more. I also love learning new technologies. I have worked on
+        variety of projects for work and on personal projects, where I could
+        quickly pick up new frameworks and languages. Please look at my projects
+        section.
       </p>
       <br />
       <p class="paragraph">

@@ -23,7 +23,7 @@
     </h1>
     <div class="hero__image">
       <img
-        src="../../src/assets/images/profile-picture.jpg"
+        src="../../src/assets/images/profile.jpg"
         alt="Head Shot of Lexie"
         class="hero__image-picture"
       />
@@ -36,25 +36,25 @@
 </template>
 
 <script>
-import { TimelineLite, TweenMax, Back, Bezier } from 'gsap'
+import { TimelineLite, TweenMax, Back, Bezier } from "gsap";
 export default {
-  name: 'Hero',
+  name: "Hero",
   components: {},
   props: {
     msg: String
   },
   mounted() {
     // Using GSAP TweenMAx plugin letters animation
-    let letters = '.hero__name span, hero__job-name p'
+    let letters = ".hero__name span, hero__job-name p";
 
     TweenMax.staggerFrom(
       letters,
       0.7,
       { opacity: 0, y: 150, ease: Back.easeOut },
       0.1
-    )
+    );
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -72,10 +72,9 @@ export default {
   -ms-grid-rows: min-content 5rem minmax(20rem, min-content) 5rem;
   -ms-grid-columns: 1fr 1fr 0.3fr min-content;
 
-    @include respond(phone) {
-  grid-template-rows: min-content 5rem 50rem 5rem;
-
-    }
+  @include respond(phone) {
+    grid-template-rows: min-content 5rem 50rem 5rem;
+  }
 
   @include respond(phone) {
     grid-gap: 2.5rem;
